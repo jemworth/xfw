@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8" />
+    <title>Xynapx FW | Dashboard</title>
+    <meta name="description" content="Latest updates and statistic charts">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {"families":["Poppins:300,400,500,600,700","Roboto:300,400,500,600,700"]},
+        active: function() {
+            sessionStorage.fonts = true;
+        }
+      });
+    </script>
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="assets/img/main/favicon.png" />
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body id="page" class="page push-right">
+    <div class="body-inner">
+      <header class="header navbar-expand-md">
+        <div class="header-wrapper">
+          <div class="header-brand">
+            <div class="d-flex">
+              <div class="brand-logo">
+                <a href="index.html" class="logo">
+                  <img alt="" src="assets/img/main/logo.png"/>
+                </a>
+              </div>
+              <div class="brand-tools">
+                <a id="btn-p-left" href="javascript:;" class="brand-icon active">
+                  <span></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="header-nav">
+            <div id="header-menu" class="header-menu">
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                    <a href="#" role="button" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="icon left flaticon-add"></i>
+                      <span class="nav-text">Actions</span>
+                    </a>
+                    <div class="dropdown-menu wrap">
+                      <ul class="nav">
+                        <li class="nav-item"><a class="nav-link"><i class="icon left flaticon-file"></i><span class="nav-text">Create</span></a></li>
+                        <li class="nav-item"><a class="nav-link"><i class="icon left ti-user"></i><span class="nav-text">Add User</span></a></li>
+                        <li class="nav-item"><a class="nav-link"><i class="icon left flaticon-clipboard"></i><span class="nav-text">Create New Task</span></a></li>
+                        <li class="nav-item"><a class="nav-link"><i class="icon left flaticon-users"></i><span class="nav-text">Register Member</span></a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a href="#" role="button" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="icon left flaticon-line-graph"></i>
+                      <span class="nav-text">Reports</span>
+                    </a>
+                    <div class="dropdown-menu wrap has-container">
+                      <ul class="nav">
+                        <li class="nav-item">
+                          <h4 class="nav-title">Annual Reports</h4>
+                          <ul class="nav">
+                            <li class="nav-item"><a class="nav-link"><i class="icon left flaticon-file"></i><span class="nav-text">Create</span></a></li>
+                            <li class="nav-item"><a class="nav-link"><i class="icon left ti-user"></i><span class="nav-text">Add User</span></a></li>
+                            <li class="nav-item"><a class="nav-link"><i class="icon left flaticon-clipboard"></i><span class="nav-text">Create New Task</span></a></li>
+                            <li class="nav-item"><a class="nav-link"><i class="icon left flaticon-users"></i><span class="nav-text">Register Member</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <h4 class="nav-title">HR Reports</h4>
+                          <ul class="nav">
+                            <li class="nav-item"><a class="nav-link"><i class="icon left ti-minus"></i><span class="nav-text">Create</span></a></li>
+                            <li class="nav-item"><a class="nav-link"><i class="icon left ti-minus"></i><span class="nav-text">Add User</span></a></li>
+                            <li class="nav-item"><a class="nav-link"><i class="icon left ti-minus"></i><span class="nav-text">Create New Task</span></a></li>
+                            <li class="nav-item"><a class="nav-link"><i class="icon left ti-minus"></i><span class="nav-text">Register Member</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <h4 class="nav-title">User Reports</h4>
+                          <ul class="nav">
+                            <li class="nav-item"><a class="nav-link"><i class="icon left bullet"></i><span class="nav-text">Create</span></a></li>
+                            <li class="nav-item"><a class="nav-link"><i class="icon left bullet"></i><span class="nav-text">Add User</span></a></li>
+                            <li class="nav-item"><a class="nav-link"><i class="icon left bullet"></i><span class="nav-text">Create New Task</span></a></li>
+                            <li class="nav-item"><a class="nav-link"><i class="icon left bullet"></i><span class="nav-text">Register Member</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <h4 class="nav-title">Payroll Reports</h4>
+                          <ul class="nav">
+                            <li class="nav-item"><a class="nav-link"><span class="nav-text">Create</span></a></li>
+                            <li class="nav-item"><a class="nav-link"><span class="nav-text">Add User</span></a></li>
+                            <li class="nav-item"><a class="nav-link"><span class="nav-text">Create New Task</span></a></li>
+                            <li class="nav-item"><a class="nav-link"><span class="nav-text">Register Member</span></a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div id="header-topbar" class="header-topbar">
+              <div class="nav-wrapper navbar-collapse">
+                <ul class="navbar-nav icons">
+                  <li class="nav-item dropdown large header-bg-fill">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon flaticon-grid-menu"></i></a>
+                    <div class="dropdown-menu wrap dropdown-menu-right">
+                      <div class="dropdown-header">
+                        <span class="dropdown-title">Quick Actions</span>
+                        <span class="dropdown-sub-title">Shortcuts</span>
+                      </div>
+                      <div class="nav-grid">
+                        <div class="nav-grid-row">
+                          <a href="" class="nav-grid-link">
+                            <i class="icon flaticon-file"></i>
+                            <span class="nav-grid-text">Check Records</span>
+                          </a>
+                          <a href="" class="nav-grid-link">
+                            <i class="icon flaticon-user"></i>
+                            <span class="nav-grid-text">Add Member</span>
+                          </a>
+                        </div>
+                        <div class="nav-grid-row">
+                          <a href="" class="nav-grid-link">
+                            <i class="icon flaticon-users"></i>
+                            <span class="nav-grid-text">View Member</span>
+                          </a>
+                          <a href="" class="nav-grid-link">
+                            <i class="icon flaticon-location"></i>
+                            <span class="nav-grid-text">Leaves</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown large header-bg-fill">
+                    <!-- Add class "has-notification" if notification is not empty -->
+                    <a href="#" class="nav-link dropdown-toggle has-notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="badge badge-danger notification-badge"> </span><i class="icon flaticon-music-2"></i></a>
+                    <div class="dropdown-menu wrap dropdown-menu-right">
+                      <div class="dropdown-header">
+                        <span class="dropdown-title">5 new</span>
+                        <span class="dropdown-sub-title">User Notifications</span>
+                      </div>
+                      <div class="dropdown-body">
+                        <div class="scrollable-wrap">
+                          <ul class="timeline-list">
+                            <li class="timeline-list-item danger">
+                              <div class="timeline-list-badge"></div>
+                              <div class="timeline-list-text">12 new <span class="badge pill badge-danger">Danger</span></div>
+                              <div class="timeline-list-time">Just now</div>
+                            </li>
+                            <li class="timeline-list-item success">
+                              <div class="timeline-list-badge"></div>
+                              <div class="timeline-list-text">12 new <span class="badge pill badge-success">Approved</span></div>
+                              <div class="timeline-list-time">45 mins</div>
+                            </li>
+                            <li class="timeline-list-item disable">
+                              <div class="timeline-list-badge"></div>
+                              <div class="timeline-list-text">New invoice received <a class="link" href="">Check</a></div>
+                              <div class="timeline-list-time">1 hour</div>
+                            </li>
+                            <li class="timeline-list-item warning">
+                              <div class="timeline-list-badge"></div>
+                              <div class="timeline-list-text">New reports received</div>
+                              <div class="timeline-list-time">3 days</div>
+                            </li>
+                            <li class="timeline-list-item info">
+                              <div class="timeline-list-badge"></div>
+                              <div class="timeline-list-text">New order received</div>
+                              <div class="timeline-list-time">10 months</div>
+                            </li>
+                            <li class="timeline-list-item primary">
+                              <div class="timeline-list-badge"></div>
+                              <div class="timeline-list-text">New order received</div>
+                              <div class="timeline-list-time">10 months</div>
+                            </li>
+                            <li class="timeline-list-item">
+                              <div class="timeline-list-badge"></div>
+                              <div class="timeline-list-text">New order received</div>
+                              <div class="timeline-list-time">10 months</div>
+                            </li>
+                            <li class="timeline-list-item">
+                              <div class="timeline-list-badge"></div>
+                              <div class="timeline-list-text">New order received</div>
+                              <div class="timeline-list-time">10 months</div>
+                            </li>
+                            <li class="timeline-list-item">
+                              <div class="timeline-list-badge"></div>
+                              <div class="timeline-list-text">New order received</div>
+                              <div class="timeline-list-time">10 months</div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="dropdown-footer">
+                        <a class="btn btn-sm pill btn-outline-primary">View All</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown top-user medium header-bg-fill">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="user-pic"><img src="./assets/img/main/profile-img.png"></span>
+                    </a>
+                    <div class="dropdown-menu wrap dropdown-menu-right">
+                      <div class="dropdown-header">
+                        <div class="card-user">
+                          <div class="card-user-pic">
+                            <img src="./assets/img/main/profile-img.png" class="img-rounded" alt="">
+                          </div>
+                          <div class="card-user-details">
+                            <span class="card-user-name">Mark Xynapx</span>
+                            <a href="mailto:mark.andre@gmail.com" class="card-user-email link">mark@xynapx.ph</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="dropdown-body">
+                        <ul class="nav">
+                          <li class="nav-item"><a class="nav-link"><i class="icon left flaticon-profile-1"></i><span class="nav-text">Profile</span></a></li>
+                          <li class="nav-item"><a class="nav-link"><i class="icon left flaticon-share"></i><span class="nav-text">Activity</span></a></li>
+                          <li class="nav-item"><a class="nav-link"><i class="icon left flaticon-chat-1"></i><span class="nav-text">Messages</span><span class="badge badge-success">2</span></a></li>
+                          <li class="nav-item"><a class="nav-link"><i class="icon left flaticon-cogwheel-2"></i><span class="nav-text">Settings</span></a></li>
+                          <li class="nav-item"><a class="nav-link"><i class="icon left flaticon-lock-1"></i><span class="nav-text">Change Password</span></a></li>
+                        </ul>
+                      </div>
+                      <div class="dropdown-footer">
+                        <a class="btn btn-sm pill btn-outline-primary">Logout</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="page-body">
+        <div id="left-menu" class="aside-left sidebar-nav">
+          <div class="nav nav-wrapper">
+            <ul class="sidebar-menu navbar-nav">
+              <li class="nav-item">
+                <a href="dashboard.html" class="nav-link" aria-expanded="false">
+                  <i class="icon left ti-blackboard"></i>
+                  <span class="nav-text">Dashboard</span>
+                  <span class="badge badge-danger">2</span>
+                </a>
+              </li>
+              <li class="menu-section">
+                <span class="menu-section-text">
+                  Department
+                </span>
+                <i class="icon flaticon-more-v3"></i>
+              </li>
+              <li class="nav-item item-submenu">
+                <a  href="#" class="nav-link nav-toggle" aria-expanded="false">
+                  <i class="icon left flaticon-interface-9"></i>
+                  <span class="nav-text">Components</span>
+                  <i class="icon right ti-angle-right"></i>
+                </a>
+                <ul class="submenu" aria-expanded="false">
+                  <li class="nav-item nav-title">
+                    <span class="nav-text">Components</span>
+                  </li>
+                  <li class="nav-item">
+                    <a href="forms.html" class="nav-link">
+                      <i class="icon left bullet"></i>
+                      <span class="nav-text">Forms</span>
+                    </a>
+                  </li>
+                  <li class="nav-item active">
+                    <a href="content-button.html" class="nav-link">
+                      <i class="icon left bullet"></i>
+                      <span class="nav-text">Content Buttons</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item item-submenu">
+                <a  href="#" class="nav-link nav-toggle" aria-expanded="false">
+                  <i class="icon left flaticon-calendar"></i>
+                  <span class="nav-text">First Level</span>
+                  <i class="icon right ti-angle-right"></i>
+                </a>
+                <ul class="submenu" aria-expanded="false">
+                  <li class="nav-item nav-title">
+                    <span class="nav-text">List of Tables</span>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link">
+                      <i class="icon left bullet"></i>
+                      <span class="nav-text">Link</span>
+                    </a>
+                  </li>
+                  <li class="nav-item item-submenu">
+                    <a href="" class="nav-link nav-toggle">
+                      <i class="icon left bullet"></i>
+                      <span class="nav-text">Second Level</span>
+                      <i class="icon right ti-angle-right"></i>
+                    </a>
+                    <ul class="submenu" aria-expanded="false">
+                      <li class="nav-item">
+                        <a href="" class="nav-link">
+                          <i class="icon left bullet"></i>
+                          <span class="nav-text">Link</span>
+                        </a>
+                      </li>
+                      <li class="nav-item item-submenu">
+                        <a href="" class="nav-link nav-toggle">
+                          <i class="icon left bullet"></i>
+                          <span class="nav-text">Link</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="" class="nav-link">
+                          <i class="icon left bullet"></i>
+                          <span class="nav-text">Link</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link">
+                      <i class="icon left bullet"></i>
+                      <span class="nav-text">Link</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-section">
+                <span class="menu-section-text">
+                  Reports
+                </span>
+                <i class="icon flaticon-more-v3"></i>
+              </li>
+              <li class="nav-item">
+                <a href="dashboard.html" class="nav-link" aria-expanded="false">
+                  <i class="icon left flaticon-interface-1"></i>
+                  <span class="nav-text">Invoices</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="content-wrapper">
+          <div class="subheader">
+            <div class="d-flex align-items-center">
+              <div class="title mr-auto">
+                <h3>Tables</h3>
+                <ul class="breadcrumb">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      LH Prime
+                    </a>
+                  </li>
+                  <li class="nav-separator">
+                    -
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link">
+                      <span class="nav-text">
+                        Components
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-separator">
+                    -
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link">
+                      <span class="nav-text">
+                        Tables
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <div class="dropdown">
+                  <a class="btn btn-primary btn-raised dropdown-toggle btn-lg float-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="icon left ti-user"></i> Add New</a>
+                  <div class="dropdown-menu wrap dropdown-menu-right">
+                    <ul class="nav">
+                      <li class="nav-item"><a class="nav-link"><span class="nav-text">Create</span><div class="ripple-container"></div></a></li>
+                      <li class="nav-item"><a class="nav-link"><span class="nav-text">Add User</span></a></li>
+                      <li class="nav-item"><a class="nav-link"><span class="nav-text">Create New Task</span></a></li>
+                      <li class="nav-item"><a class="nav-link"><span class="nav-text">Register Member</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="card-box">
+              <div class="card-head">
+                <div class="head-caption">
+                  <div class="head-title">
+                    <h4 class="head-text">Table <small>from Scratch</small></h4>
+                  </div>
+                </div>
+                <div class="card-head-tools">
+                  <div class="dropdown">
+                    <a class="btn btn-icon btn-outline-light btn-raised float-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="icon ti-more-alt"></i>
+                    </a>
+                    <div class="dropdown-menu wrap dropdown-menu-right">
+                      <ul class="nav">
+                        <li class="nav-item"><a class="nav-link"><span class="nav-text">Create</span><div class="ripple-container"></div></a></li>
+                        <li class="nav-item"><a class="nav-link"><span class="nav-text">Add User</span></a></li>
+                        <li class="nav-item"><a class="nav-link"><span class="nav-text">Create New Task</span></a></li>
+                        <li class="nav-item"><a class="nav-link"><span class="nav-text">Register Member</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table table-striped has-col-9">
+                    <thead>
+                      <tr>
+                        <th>ID No.</th>
+                        <th>Full Name</th>
+                        <th>Position</th>
+                        <th>Address</th>
+                        <th>Age</th>
+                        <th>Start Date</th>
+                        <th>Salary</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><span>1</span></td>
+                        <td><span>Mark Otto</span></td>
+                        <td><span>Accountant</span></td>
+                        <td><span>48004 Mariners Cove Circle</span></td>
+                        <td><span>30</span></td>
+                        <td><span>1/30/2010</span></td>
+                        <td><span>$162,700</span></td>
+                        <td><span class="badge badge-pill badge-success">Success</span></td>
+                        <td>
+                          <div class="dropdown sm">
+                            <a class="btn btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="icon ti-more-alt"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <ul class="nav">
+                                <li class="nav-item"><a class="nav-link"><i class="icon left ti-pencil-alt"></i><span class="nav-text">Edit Details</span></a></li>
+                                <li class="nav-item"><a class="nav-link"><i class="icon left ti-write"></i><span class="nav-text">Update Status</span></a></li>
+                                <li class="nav-item"><a class="nav-link"><i class="icon left ti-printer"></i><span class="nav-text">Generate Report</span></a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span>1</span></td>
+                        <td><span>Mark Otto</span></td>
+                        <td><span>Accountant</span></td>
+                        <td><span>48004 Mariners Cove Circle</span></td>
+                        <td><span>30</span></td>
+                        <td><span>1/30/2010</span></td>
+                        <td><span>$162,700</span></td>
+                        <td><span class="badge badge-pill badge-info">Info</span></td>
+                        <td>
+                          <div class="dropdown sm">
+                            <a class="btn btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="icon ti-more-alt"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <ul class="nav">
+                                <li class="nav-item"><a class="nav-link"><i class="icon left ti-pencil-alt"></i><span class="nav-text">Edit Details</span></a></li>
+                                <li class="nav-item"><a class="nav-link"><i class="icon left ti-write"></i><span class="nav-text">Update Status</span></a></li>
+                                <li class="nav-item"><a class="nav-link"><i class="icon left ti-printer"></i><span class="nav-text">Generate Report</span></a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span>1</span></td>
+                        <td><span>Mark Otto</span></td>
+                        <td><span>Accountant</span></td>
+                        <td><span>48004 Mariners Cove Circle</span></td>
+                        <td><span>30</span></td>
+                        <td><span>1/30/2010</span></td>
+                        <td><span>$162,700</span></td>
+                        <td><span class="badge badge-pill badge-danger">Danger</span></td>
+                        <td>
+                          <div class="dropdown sm">
+                            <a class="btn btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="icon ti-more-alt"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <ul class="nav">
+                                <li class="nav-item"><a class="nav-link"><i class="icon left ti-pencil-alt"></i><span class="nav-text">Edit Details</span></a></li>
+                                <li class="nav-item"><a class="nav-link"><i class="icon left ti-write"></i><span class="nav-text">Update Status</span></a></li>
+                                <li class="nav-item"><a class="nav-link"><i class="icon left ti-printer"></i><span class="nav-text">Generate Report</span></a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span>1</span></td>
+                        <td><span>Mark Otto</span></td>
+                        <td><span>Accountant</span></td>
+                        <td><span>48004 Mariners Cove Circle</span></td>
+                        <td><span>30</span></td>
+                        <td><span>1/30/2010</span></td>
+                        <td><span>$162,700</span></td>
+                        <td><span class="badge badge-pill badge-secondary">Disable</span></td>
+                        <td>
+                          <div class="dropdown sm">
+                            <a class="btn btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="icon ti-more-alt"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <ul class="nav">
+                                <li class="nav-item"><a class="nav-link"><i class="icon left ti-pencil-alt"></i><span class="nav-text">Edit Details</span></a></li>
+                                <li class="nav-item"><a class="nav-link"><i class="icon left ti-write"></i><span class="nav-text">Update Status</span></a></li>
+                                <li class="nav-item"><a class="nav-link"><i class="icon left ti-printer"></i><span class="nav-text">Generate Report</span></a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span>1</span></td>
+                        <td><span>Mark Otto</span></td>
+                        <td><span>Accountant</span></td>
+                        <td><span>48004 Mariners Cove Circle</span></td>
+                        <td><span>30</span></td>
+                        <td><span>1/30/2010</span></td>
+                        <td><span>$162,700</span></td>
+                        <td><span class="badge badge-pill badge-primary">Pending</span></td>
+                        <td>
+                          <div class="dropdown sm">
+                            <a class="btn btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="icon ti-more-alt"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <ul class="nav">
+                                <li class="nav-item"><a class="nav-link"><i class="icon left ti-pencil-alt"></i><span class="nav-text">Edit Details</span></a></li>
+                                <li class="nav-item"><a class="nav-link"><i class="icon left ti-write"></i><span class="nav-text">Update Status</span></a></li>
+                                <li class="nav-item"><a class="nav-link"><i class="icon left ti-printer"></i><span class="nav-text">Generate Report</span></a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span>1</span></td>
+                        <td><span>Mark Otto</span></td>
+                        <td><span>Accountant</span></td>
+                        <td><span>48004 Mariners Cove Circle</span></td>
+                        <td><span>30</span></td>
+                        <td><span>1/30/2010</span></td>
+                        <td><span>$162,700</span></td>
+                        <td><span class="badge badge-pill badge-success">Success</span></td>
+                        <td>
+                          <div class="dropdown sm">
+                            <a class="btn btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="icon ti-more-alt"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <ul class="nav">
+                                <li class="nav-item"><a class="nav-link"><i class="icon left ti-pencil-alt"></i><span class="nav-text">Edit Details</span></a></li>
+                                <li class="nav-item"><a class="nav-link"><i class="icon left ti-write"></i><span class="nav-text">Update Status</span></a></li>
+                                <li class="nav-item"><a class="nav-link"><i class="icon left ti-printer"></i><span class="nav-text">Generate Report</span></a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span>1</span></td>
+                        <td><span>Mark Otto</span></td>
+                        <td><span>Accountant</span></td>
+                        <td><span>48004 Mariners Cove Circle</span></td>
+                        <td><span>30</span></td>
+                        <td><span>1/30/2010</span></td>
+                        <td><span>$162,700</span></td>
+                        <td><span class="badge badge-pill badge-success">Success</span></td>
+                        <td>
+                          <div class="dropdown sm">
+                            <a class="btn btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="icon ti-more-alt"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <ul class="nav">
+                                <li class="nav-item"><a class="nav-link"><i class="icon left ti-pencil-alt"></i><span class="nav-text">Edit Details</span></a></li>
+                                <li class="nav-item"><a class="nav-link"><i class="icon left ti-write"></i><span class="nav-text">Update Status</span></a></li>
+                                <li class="nav-item"><a class="nav-link"><i class="icon left ti-printer"></i><span class="nav-text">Generate Report</span></a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span>1</span></td>
+                        <td><span>Mark Otto</span></td>
+                        <td><span>Accountant</span></td>
+                        <td><span>48004 Mariners Cove Circle</span></td>
+                        <td><span>30</span></td>
+                        <td><span>1/30/2010</span></td>
+                        <td><span>$162,700</span></td>
+                        <td><span class="badge badge-pill badge-success">Success</span></td>
+                        <td>
+                          <div class="dropdown sm">
+                            <a class="btn btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="icon ti-more-alt"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <ul class="nav">
+                                <li class="nav-item"><a class="nav-link"><i class="icon left ti-pencil-alt"></i><span class="nav-text">Edit Details</span></a></li>
+                                <li class="nav-item"><a class="nav-link"><i class="icon left ti-write"></i><span class="nav-text">Update Status</span></a></li>
+                                <li class="nav-item"><a class="nav-link"><i class="icon left ti-printer"></i><span class="nav-text">Generate Report</span></a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span>1</span></td>
+                        <td><span>Mark Otto</span></td>
+                        <td><span>Accountant</span></td>
+                        <td><span>48004 Mariners Cove Circle</span></td>
+                        <td><span>30</span></td>
+                        <td><span>1/30/2010</span></td>
+                        <td><span>$162,700</span></td>
+                        <td><span class="badge badge-pill badge-success">Success</span></td>
+                        <td>
+                          <div class="dropdown sm">
+                            <a class="btn btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="icon ti-more-alt"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <ul class="nav">
+                                <li class="nav-item"><a class="nav-link"><i class="icon left ti-pencil-alt"></i><span class="nav-text">Edit Details</span></a></li>
+                                <li class="nav-item"><a class="nav-link"><i class="icon left ti-write"></i><span class="nav-text">Update Status</span></a></li>
+                                <li class="nav-item"><a class="nav-link"><i class="icon left ti-printer"></i><span class="nav-text">Generate Report</span></a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span>1</span></td>
+                        <td><span>Mark Otto</span></td>
+                        <td><span>Accountant</span></td>
+                        <td><span>48004 Mariners Cove Circle</span></td>
+                        <td><span>30</span></td>
+                        <td><span>1/30/2010</span></td>
+                        <td><span>$162,700</span></td>
+                        <td><span class="badge badge-pill badge-success">Success</span></td>
+                        <td>
+                          <div class="dropdown sm">
+                            <a class="btn btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="icon ti-more-alt"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <ul class="nav">
+                                <li class="nav-item"><a class="nav-link"><i class="icon left ti-pencil-alt"></i><span class="nav-text">Edit Details</span></a></li>
+                                <li class="nav-item"><a class="nav-link"><i class="icon left ti-write"></i><span class="nav-text">Update Status</span></a></li>
+                                <li class="nav-item"><a class="nav-link"><i class="icon left ti-printer"></i><span class="nav-text">Generate Report</span></a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="datatable-footer d-flex">
+                  <div class="datatable-pagination">
+                    <ul class="pagination">
+                      <li class="page-item first disabled">
+                        <a class="page-link" href="#" tabindex="-2"><i class="icon ti-angle-double-left"></i></a>
+                      </li>
+                      <li class="page-item prev disabled">
+                        <a class="page-link" href="#" tabindex="-1"><i class="icon ti-angle-left"></i></a>
+                      </li>
+                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">4</a></li>
+                      <li class="page-item"><a class="page-link" href="#">5</a></li>
+                      <li class="page-item more"><span class="ellipsis">...</span></li>
+                      <li class="page-item"><a class="page-link" href="#">8</a></li>
+                      <li class="page-item next">
+                        <a class="page-link" href="#"><i class="icon ti-angle-right"></i></a>
+                      </li>
+                      <li class="page-item last">
+                        <a class="page-link" href="#"><i class="icon ti-angle-double-right"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="datatable-pager-info float-right ml-auto">
+                    <div class="d-flex">
+                      <div class="datatable-pager-size">
+                        <div class="dataTables_length">
+                          <select name="table1_length" aria-controls="table1" class="bootstrap-select select-sm pill" tabindex="-98">
+                            <option value="10">10</option>
+                            <option value="30">30</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="datatable-pager-detail">
+                        <div class="dataTables_info">Displaying 1 - 10 of 72 records</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-box">
+              <div class="card-head">
+                <div class="head-caption">
+                  <div class="head-title">
+                    <h4 class="head-text">Datatable <small>Plugin</small></h4>
+                  </div>
+                </div>
+                <div class="card-head-tools">
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="datatable-header row">
+                  <div class="col-xl-6">
+                    <div class="row">
+                      <div class="col-md-5">
+                        <div class="form-group form-inline">
+                          <div class="form-left">
+                            <label>Position:</label>
+                          </div>
+                          <div class="form-right">
+                            <select class="form-control select-outline" id="m_form_status">
+                              <option value="">All</option>
+                              <option value="1">Web Developer</option>
+                              <option value="2">Designer</option>
+                              <option value="3">Team Manager</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <div class="form-group form-inline">
+                          <div class="form-left">
+                            <label class="label">
+                              Office:
+                            </label>
+                          </div>
+                          <div class="form-right">
+                            <select class="form-control select-outline" id="m_form_type">
+                              <option value="">
+                                All
+                              </option>
+                              <option value="1">
+                                Cebu City
+                              </option>
+                              <option value="2">
+                                Mandue City
+                              </option>
+                              <option value="3">
+                                Talisay City
+                              </option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 text-right">
+                    <div class="row">
+                      <div class="col-md-5 pr-0 ml-auto">
+                        <form class="searchbox">
+                          <input type="search" placeholder="Type into search" name="search" class="searchbox-input" onkeyup="buttonUp();" required>
+                          <button type="submit" class="searchbox-submit"><i class="icon ti-search"></i></button>
+                          <span class="searchbox-icon"><i class="icon ti-search"></i></span>
+                        </form>
+                      </div>
+                      <div class="col-md-3 pl-0">
+                        <a href="#" class="btn btn-primary btn-raised">
+                          <i class="icon left ti-plus sm"></i>Add Employee
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <table id="table1" class="table hover table-striped"></table>
+              </div>
+            </div>
+
+            <div class="card-box">
+              <div class="card-body">
+                <div class="datatable-header row">
+                  <div class="col-xl-6">
+                    <div class="row">
+                      <div class="col-md-5">
+                        <div class="form-group form-inline">
+                          <div class="form-left">
+                            <label>Position:</label>
+                          </div>
+                          <div class="form-right">
+                            <select class="form-control select-outline" id="m_form_status">
+                              <option value="">All</option>
+                              <option value="1">Web Developer</option>
+                              <option value="2">Designer</option>
+                              <option value="3">Team Manager</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <div class="form-group form-inline">
+                          <div class="form-left">
+                            <label class="label">
+                              Office:
+                            </label>
+                          </div>
+                          <div class="form-right">
+                            <select class="form-control select-outline" id="m_form_type">
+                              <option value="">
+                                All
+                              </option>
+                              <option value="1">
+                                Cebu City
+                              </option>
+                              <option value="2">
+                                Mandue City
+                              </option>
+                              <option value="3">
+                                Talisay City
+                              </option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 text-right">
+                    <div class="row">
+                      <div class="col-md-5 ml-auto">
+                        <form class="searchbox">
+                          <input type="search" placeholder="Type into search" name="search" class="searchbox-input" onkeyup="buttonUp();" required>
+                          <button type="submit" class="searchbox-submit"><i class="icon ti-search"></i></button>
+                          <span class="searchbox-icon"><i class="icon ti-search"></i></span>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <table id="table2" class="table hover table-striped"></table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="page-footer">
+        <div class="container">
+          <div class="d-flex">
+            <div class="footer-copyright">
+              <p class="mb-0">2018 &copy; <a href="https://xynapx.ph" class="link">Xynapx Framework</a>. All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./assets/js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="./assets/js/popper.js" type="text/javascript"></script>
+    <script src="./assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="./assets/js/plugins.min.js" type="text/javascript"></script>
+    <script src="./assets/js/modernizr.min.js" type="text/javascript"></script>
+    <script src="./assets/js/custom.js" type="text/javascript"></script>
+  </body>
+</html>

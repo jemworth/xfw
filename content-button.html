@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8" />
+    <title>Xynapx FW | Dashboard</title>
+    <meta name="description" content="Latest updates and statistic charts">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {"families":["Poppins:300,400,500,600,700","Roboto:300,400,500,600,700"]},
+        active: function() {
+            sessionStorage.fonts = true;
+        }
+      });
+    </script>
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="assets/img/main/favicon.png" />
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body id="page" class="page push-right">
+    <div class="body-inner">
+      <header class="header navbar-expand-md">
+        <div class="header-wrapper">
+          <div class="header-brand">
+            <div class="d-flex">
+              <div class="brand-logo">
+                <a href="index.html" class="logo">
+                  <img alt="" src="assets/img/main/logo.png"/>
+                </a>
+              </div>
+              <div class="brand-tools">
+                <a id="btn-p-left" href="javascript:;" class="brand-icon active">
+                  <span></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="header-nav">
+            <div id="header-menu" class="header-menu">
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                    <a href="#" role="button" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="icon left flaticon-add"></i>
+                      <span class="nav-text">Actions</span>
+                    </a>
+                    <div class="dropdown-menu wrap">
+                      <ul class="nav">
+                        <li class="nav-item"><a class="nav-link"><i class="icon left flaticon-file"></i><span class="nav-text">Create</span></a></li>
+                        <li class="nav-item"><a class="nav-link"><i class="icon left ti-user"></i><span class="nav-text">Add User</span></a></li>
+                        <li class="nav-item"><a class="nav-link"><i class="icon left flaticon-clipboard"></i><span class="nav-text">Create New Task</span></a></li>
+                        <li class="nav-item"><a class="nav-link"><i class="icon left flaticon-users"></i><span class="nav-text">Register Member</span></a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a href="#" role="button" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="icon left flaticon-line-graph"></i>
+                      <span class="nav-text">Reports</span>
+                    </a>
+                    <div class="dropdown-menu wrap has-container">
+                      <ul class="nav">
+                        <li class="nav-item">
+                          <h4 class="nav-title">Annual Reports</h4>
+                          <ul class="nav">
+                            <li class="nav-item"><a class="nav-link"><i class="icon left flaticon-file"></i><span class="nav-text">Create</span></a></li>
+                            <li class="nav-item"><a class="nav-link"><i class="icon left ti-user"></i><span class="nav-text">Add User</span></a></li>
+                            <li class="nav-item"><a class="nav-link"><i class="icon left flaticon-clipboard"></i><span class="nav-text">Create New Task</span></a></li>
+                            <li class="nav-item"><a class="nav-link"><i class="icon left flaticon-users"></i><span class="nav-text">Register Member</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <h4 class="nav-title">HR Reports</h4>
+                          <ul class="nav">
+                            <li class="nav-item"><a class="nav-link"><i class="icon left ti-minus"></i><span class="nav-text">Create</span></a></li>
+                            <li class="nav-item"><a class="nav-link"><i class="icon left ti-minus"></i><span class="nav-text">Add User</span></a></li>
+                            <li class="nav-item"><a class="nav-link"><i class="icon left ti-minus"></i><span class="nav-text">Create New Task</span></a></li>
+                            <li class="nav-item"><a class="nav-link"><i class="icon left ti-minus"></i><span class="nav-text">Register Member</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <h4 class="nav-title">User Reports</h4>
+                          <ul class="nav">
+                            <li class="nav-item"><a class="nav-link"><i class="icon left bullet"></i><span class="nav-text">Create</span></a></li>
+                            <li class="nav-item"><a class="nav-link"><i class="icon left bullet"></i><span class="nav-text">Add User</span></a></li>
+                            <li class="nav-item"><a class="nav-link"><i class="icon left bullet"></i><span class="nav-text">Create New Task</span></a></li>
+                            <li class="nav-item"><a class="nav-link"><i class="icon left bullet"></i><span class="nav-text">Register Member</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <h4 class="nav-title">Payroll Reports</h4>
+                          <ul class="nav">
+                            <li class="nav-item"><a class="nav-link"><span class="nav-text">Create</span></a></li>
+                            <li class="nav-item"><a class="nav-link"><span class="nav-text">Add User</span></a></li>
+                            <li class="nav-item"><a class="nav-link"><span class="nav-text">Create New Task</span></a></li>
+                            <li class="nav-item"><a class="nav-link"><span class="nav-text">Register Member</span></a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div id="header-topbar" class="header-topbar">
+              <div class="nav-wrapper navbar-collapse">
+                <ul class="navbar-nav icons">
+                  <li class="nav-item dropdown">
+                    <a href="#" role="button" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon flaticon-music-2"></i></a>
+                    <div class="dropdown-menu wrap dropdown-menu-right" aria-labelledby="btn-notification">
+                      <ul class="nav">
+                        <li class="nav-item"><a class="nav-link"><span class="nav-text">Create</span></a></li>
+                        <li class="nav-item"><a class="nav-link"><span class="nav-text">Add User</span></a></li>
+                        <li class="nav-item"><a class="nav-link"><span class="nav-text">Create New Task</span></a></li>
+                        <li class="nav-item"><a class="nav-link"><span class="nav-text">Complete Tasks</span></a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a href="#" role="button" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon flaticon-network"></i></a>
+                    <div class="dropdown-menu wrap dropdown-menu-right">
+                      <ul class="nav">
+                        <li class="nav-item"><a class="nav-link"><span class="nav-text">Create</span></a></li>
+                        <li class="nav-item"><a class="nav-link"><span class="nav-text">Add User</span></a></li>
+                        <li class="nav-item"><a class="nav-link"><span class="nav-text">Create New Task</span></a></li>
+                        <li class="nav-item"><a class="nav-link"><span class="nav-text">Complete Tasks</span></a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a href="#" role="button" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon ti-user"></i></a>
+                    <div class="dropdown-menu wrap dropdown-menu-right">
+                      <ul class="nav">
+                        <li class="nav-item"><a class="nav-link"><span class="nav-text">Create</span></a></li>
+                        <li class="nav-item"><a class="nav-link"><span class="nav-text">Add User</span></a></li>
+                        <li class="nav-item"><a class="nav-link"><span class="nav-text">Create New Task</span></a></li>
+                        <li class="nav-item"><a class="nav-link"><span class="nav-text">Complete Tasks</span></a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="page-body">
+        <div id="left-menu" class="aside-left sidebar-nav">
+          <div class="nav nav-wrapper">
+            <ul class="sidebar-menu navbar-nav">
+              <li class="nav-item">
+                <a href="dashboard.html" class="nav-link" aria-expanded="false">
+                  <i class="icon left ti-blackboard"></i>
+                  <span class="nav-text">Dashboard</span>
+                  <span class="badge badge-danger">2</span>
+                </a>
+              </li>
+              <li class="menu-section">
+                <span class="menu-section-text">
+                  Department
+                </span>
+                <i class="icon flaticon-more-v3"></i>
+              </li>
+              <li class="nav-item item-submenu">
+                <a  href="#" class="nav-link nav-toggle" aria-expanded="false">
+                  <i class="icon left flaticon-interface-9"></i>
+                  <span class="nav-text">Components</span>
+                  <i class="icon right ti-angle-right"></i>
+                </a>
+                <ul class="submenu" aria-expanded="false">
+                  <li class="nav-item nav-title">
+                    <span class="nav-text">Components</span>
+                  </li>
+                  <li class="nav-item">
+                    <a href="forms.html" class="nav-link">
+                      <i class="icon left bullet"></i>
+                      <span class="nav-text">Forms</span>
+                    </a>
+                  </li>
+                  <li class="nav-item active">
+                    <a href="content-button.html" class="nav-link">
+                      <i class="icon left bullet"></i>
+                      <span class="nav-text">Content Buttons</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item item-submenu">
+                <a  href="#" class="nav-link nav-toggle" aria-expanded="false">
+                  <i class="icon left flaticon-calendar"></i>
+                  <span class="nav-text">First Level</span>
+                  <i class="icon right ti-angle-right"></i>
+                </a>
+                <ul class="submenu" aria-expanded="false">
+                  <li class="nav-item nav-title">
+                    <span class="nav-text">List of Tables</span>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link">
+                      <i class="icon left bullet"></i>
+                      <span class="nav-text">Link</span>
+                    </a>
+                  </li>
+                  <li class="nav-item item-submenu">
+                    <a href="" class="nav-link nav-toggle">
+                      <i class="icon left bullet"></i>
+                      <span class="nav-text">Second Level</span>
+                      <i class="icon right ti-angle-right"></i>
+                    </a>
+                    <ul class="submenu" aria-expanded="false">
+                      <li class="nav-item">
+                        <a href="" class="nav-link">
+                          <i class="icon left bullet"></i>
+                          <span class="nav-text">Link</span>
+                        </a>
+                      </li>
+                      <li class="nav-item item-submenu">
+                        <a href="" class="nav-link nav-toggle">
+                          <i class="icon left bullet"></i>
+                          <span class="nav-text">Link</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="" class="nav-link">
+                          <i class="icon left bullet"></i>
+                          <span class="nav-text">Link</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link">
+                      <i class="icon left bullet"></i>
+                      <span class="nav-text">Link</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-section">
+                <span class="menu-section-text">
+                  Reports
+                </span>
+                <i class="icon flaticon-more-v3"></i>
+              </li>
+              <li class="nav-item">
+                <a href="dashboard.html" class="nav-link" aria-expanded="false">
+                  <i class="icon left flaticon-interface-1"></i>
+                  <span class="nav-text">Invoices</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="content-wrapper">
+          <div class="subheader">
+            <div class="d-flex align-items-center">
+              <div class="title mr-auto">
+                <h3>Content</h3>
+              </div>
+              <div>
+                <div class="dropdown">
+                  <a class="btn btn-primary btn-raised dropdown-toggle btn-lg float-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="icon left ti-user"></i> Add New</a>
+                  <div class="dropdown-menu wrap dropdown-menu-right">
+                    <ul class="nav">
+                      <li class="nav-item"><a class="nav-link"><span class="nav-text">Create</span><div class="ripple-container"></div></a></li>
+                      <li class="nav-item"><a class="nav-link"><span class="nav-text">Add User</span></a></li>
+                      <li class="nav-item"><a class="nav-link"><span class="nav-text">Create New Task</span></a></li>
+                      <li class="nav-item"><a class="nav-link"><span class="nav-text">Register Member</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="card-box">
+                  <div class="card-head">
+                    <div class="head-caption">
+                      <div class="head-title">
+                        <h4 class="head-text">Buttons</h4>
+                      </div>
+                    </div>
+                    <div class="card-head-tools">
+                      <div class="dropdown">
+                        <a class="btn btn-icon btn-outline-light btn-raised float-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="icon ti-more-alt"></i>
+                        </a>
+                        <div class="dropdown-menu wrap dropdown-menu-right">
+                          <ul class="nav">
+                            <li class="nav-item"><a class="nav-link"><span class="nav-text">Create</span><div class="ripple-container"></div></a></li>
+                            <li class="nav-item"><a class="nav-link"><span class="nav-text">Add User</span></a></li>
+                            <li class="nav-item"><a class="nav-link"><span class="nav-text">Create New Task</span></a></li>
+                            <li class="nav-item"><a class="nav-link"><span class="nav-text">Register Member</span></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h5>Primary</h5>
+                    <hr>
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-secondary">Secondary</button>
+                    <button type="button" class="btn btn-success">Success</button>
+                    <button type="button" class="btn btn-danger">Danger</button>
+                    <button type="button" class="btn btn-warning">Warning</button>
+                    <button type="button" class="btn btn-info">Info</button>
+                    <button type="button" class="btn btn-light">Light</button>
+                    <button type="button" class="btn btn-dark">Dark</button>
+                    <button type="button" class="btn btn-link">Link</button>
+
+                    <pre class="bg-light mt-15 p-15"><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>Secondary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-danger"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-warning"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-info"</span><span class="nt">&gt;</span>Info<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-light"</span><span class="nt">&gt;</span>Light<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-dark"</span><span class="nt">&gt;</span>Dark<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-link"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/button&gt;</span></code></pre>
+
+                    <h5 class="mt-30">Outline</h5>
+                    <hr>
+                    <button type="button" class="btn btn-outline-primary">Primary</button>
+                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                    <button type="button" class="btn btn-outline-success">Success</button>
+                    <button type="button" class="btn btn-outline-danger">Danger</button>
+                    <button type="button" class="btn btn-outline-warning">Warning</button>
+                    <button type="button" class="btn btn-outline-info">Info</button>
+                    <button type="button" class="btn btn-outline-light">Light</button>
+                    <button type="button" class="btn btn-outline-dark">Dark</button>
+
+                    <pre class="bg-light mt-15 p-15"><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-outline-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-outline-secondary"</span><span class="nt">&gt;</span>Secondary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-outline-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-outline-danger"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-outline-warning"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-outline-info"</span><span class="nt">&gt;</span>Info<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-outline-light"</span><span class="nt">&gt;</span>Light<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-outline-dark"</span><span class="nt">&gt;</span>Dark<span class="nt">&lt;/button&gt;</span></code></pre>
+                    
+                    <h5 class="mt-30">Pills</h5>
+                    <hr>
+                    <button type="button" class="btn pill btn-primary">Primary</button>
+                    <button type="button" class="btn pill btn-secondary">Secondary</button>
+                    <button type="button" class="btn pill btn-success">Success</button>
+                    <button type="button" class="btn pill btn-danger">Danger</button>
+                    <button type="button" class="btn pill btn-warning">Warning</button>
+                    <button type="button" class="btn pill btn-info">Info</button>
+                    <button type="button" class="btn pill btn-light">Light</button>
+                    <button type="button" class="btn pill btn-dark">Dark</button>
+
+                    <pre class="bg-light mt-15 p-15"><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn pill btn-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn pill btn-secondary"</span><span class="nt">&gt;</span>Secondary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn pill btn-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn pill btn-danger"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn pill btn-warning"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn pill btn-info"</span><span class="nt">&gt;</span>Info<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn pill btn-light"</span><span class="nt">&gt;</span>Light<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn pill btn-dark"</span><span class="nt">&gt;</span>Dark<span class="nt">&lt;/button&gt;</span></code></pre>
+
+                    <h5 class="mt-30">Pills Outline</h5>
+                    <hr>
+                    <button type="button" class="btn pill btn-outline-primary">Primary</button>
+                    <button type="button" class="btn pill btn-outline-secondary">Secondary</button>
+                    <button type="button" class="btn pill btn-outline-success">Success</button>
+                    <button type="button" class="btn pill btn-outline-danger">Danger</button>
+                    <button type="button" class="btn pill btn-outline-warning">Warning</button>
+                    <button type="button" class="btn pill btn-outline-info">Info</button>
+                    <button type="button" class="btn pill btn-outline-light">Light</button>
+                    <button type="button" class="btn pill btn-outline-dark">Dark</button>
+
+                    <pre class="bg-light mt-15 p-15"><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn pill btn-outline-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn pill btn-outline-secondary"</span><span class="nt">&gt;</span>Secondary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn pill btn-outline-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn pill btn-outline-danger"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn pill btn-outline-warning"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn pill btn-outline-info"</span><span class="nt">&gt;</span>Info<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn pill btn-outline-light"</span><span class="nt">&gt;</span>Light<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn pill btn-outline-dark"</span><span class="nt">&gt;</span>Dark<span class="nt">&lt;/button&gt;</span></code></pre>
+
+                    <h5 class="mt-30">Raised</h5>
+                    <hr>
+                    <button type="button" class="btn btn-raised btn-primary">Primary</button>
+                    <button type="button" class="btn btn-raised btn-secondary">Secondary</button>
+                    <button type="button" class="btn btn-raised btn-success">Success</button>
+                    <button type="button" class="btn btn-raised btn-danger">Danger</button>
+                    <button type="button" class="btn btn-raised btn-warning">Warning</button>
+                    <button type="button" class="btn btn-raised btn-info">Info</button>
+                    <button type="button" class="btn btn-raised btn-light">Light</button>
+                    <button type="button" class="btn btn-raised btn-dark">Dark</button>
+
+                    <pre class="bg-light mt-15 p-15"><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-raised btn-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-raised btn-secondary"</span><span class="nt">&gt;</span>Secondary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-raised btn-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-raised btn-danger"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-raised btn-warning"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-raised btn-info"</span><span class="nt">&gt;</span>Info<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-raised btn-light"</span><span class="nt">&gt;</span>Light<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-raised btn-dark"</span><span class="nt">&gt;</span>Dark<span class="nt">&lt;/button&gt;</span></code></pre>
+
+                    <h5 class="mt-30">Raised Outline</h5>
+                    <hr>
+                    <button type="button" class="btn btn-raised btn-outline-primary">Primary</button>
+                    <button type="button" class="btn btn-raised btn-outline-secondary">Secondary</button>
+                    <button type="button" class="btn btn-raised btn-outline-success">Success</button>
+                    <button type="button" class="btn btn-raised btn-outline-danger">Danger</button>
+                    <button type="button" class="btn btn-raised btn-outline-warning">Warning</button>
+                    <button type="button" class="btn btn-raised btn-outline-info">Info</button>
+                    <button type="button" class="btn btn-raised btn-outline-light">Light</button>
+                    <button type="button" class="btn btn-raised btn-outline-dark">Dark</button>
+
+                    <pre class="bg-light mt-15 p-15"><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-raised btn-outline-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-raised btn-outline-secondary"</span><span class="nt">&gt;</span>Secondary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-raised btn-outline-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-raised btn-outline-danger"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-raised btn-outline-warning"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-raised btn-outline-info"</span><span class="nt">&gt;</span>Info<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-raised btn-outline-light"</span><span class="nt">&gt;</span>Light<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-raised btn-outline-dark"</span><span class="nt">&gt;</span>Dark<span class="nt">&lt;/button&gt;</span></code></pre>
+                  </div>
+                </div>
+
+                <div class="card-box">
+                  <div class="card-head">
+                    <div class="head-caption">
+                      <div class="head-title">
+                        <h4 class="head-text">Buttons with loader</h4>
+                      </div>
+                    </div>
+                    <div class="card-head-tools">
+                      <div class="dropdown">
+                        <a class="btn btn-icon btn-outline-light btn-raised float-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="icon ti-more-alt"></i>
+                        </a>
+                        <div class="dropdown-menu wrap dropdown-menu-right">
+                          <ul class="nav">
+                            <li class="nav-item"><a class="nav-link"><span class="nav-text">Create</span><div class="ripple-container"></div></a></li>
+                            <li class="nav-item"><a class="nav-link"><span class="nav-text">Add User</span></a></li>
+                            <li class="nav-item"><a class="nav-link"><span class="nav-text">Create New Task</span></a></li>
+                            <li class="nav-item"><a class="nav-link"><span class="nav-text">Register Member</span></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h5>Primary</h5>
+                    <hr>
+                    <button type="button" class="btn btn-primary loader">Primary</button>
+                    <button type="button" class="btn btn-secondary loader">Secondary</button>
+                    <button type="button" class="btn btn-success loader">Success</button>
+                    <button type="button" class="btn btn-danger loader">Danger</button>
+                    <button type="button" class="btn btn-warning loader">Warning</button>
+                    <button type="button" class="btn btn-info loader">Info</button>
+                    <button type="button" class="btn btn-light loader">Light</button>
+                    <button type="button" class="btn btn-dark loader">Dark</button>
+                    <button type="button" class="btn btn-link loader">Link</button>
+
+                    <pre class="bg-light mt-15 p-15"><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary loader"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary loader"</span><span class="nt">&gt;</span>Secondary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-success loader"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-danger loader"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-warning loader"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-info loader"</span><span class="nt">&gt;</span>Info<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-light loader"</span><span class="nt">&gt;</span>Light<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-dark loader"</span><span class="nt">&gt;</span>Dark<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-link loader"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/button&gt;</span></code></pre>
+
+                    <h5 class="mt-30">Outline</h5>
+                    <hr>
+                    <button type="button" class="btn btn-outline-primary loader">Primary</button>
+                    <button type="button" class="btn btn-outline-secondary loader">Secondary</button>
+                    <button type="button" class="btn btn-outline-success loader">Success</button>
+                    <button type="button" class="btn btn-outline-danger loader">Danger</button>
+                    <button type="button" class="btn btn-outline-warning loader">Warning</button>
+                    <button type="button" class="btn btn-outline-info loader">Info</button>
+                    <button type="button" class="btn btn-outline-light loader">Light</button>
+                    <button type="button" class="btn btn-outline-dark loader">Dark</button>
+                    
+                    <h5 class="mt-30">Pills</h5>
+                    <hr>
+                    <button type="button" class="btn pill btn-primary loader">Primary</button>
+                    <button type="button" class="btn pill btn-secondary loader">Secondary</button>
+                    <button type="button" class="btn pill btn-success loader">Success</button>
+                    <button type="button" class="btn pill btn-danger loader">Danger</button>
+                    <button type="button" class="btn pill btn-warning loader">Warning</button>
+                    <button type="button" class="btn pill btn-info loader">Info</button>
+                    <button type="button" class="btn pill btn-light loader">Light</button>
+                    <button type="button" class="btn pill btn-dark loader">Dark</button>
+
+                    <h5 class="mt-30">Pills Outline</h5>
+                    <hr>
+                    <button type="button" class="btn pill btn-outline-primary loader">Primary</button>
+                    <button type="button" class="btn pill btn-outline-secondary loader">Secondary</button>
+                    <button type="button" class="btn pill btn-outline-success loader">Success</button>
+                    <button type="button" class="btn pill btn-outline-danger loader">Danger</button>
+                    <button type="button" class="btn pill btn-outline-warning loader">Warning</button>
+                    <button type="button" class="btn pill btn-outline-info loader">Info</button>
+                    <button type="button" class="btn pill btn-outline-light loader">Light</button>
+                    <button type="button" class="btn pill btn-outline-dark loader">Dark</button>
+
+                    <h5 class="mt-30">Raised</h5>
+                    <hr>
+                    <button type="button" class="btn btn-raised btn-primary loader">Primary</button>
+                    <button type="button" class="btn btn-raised btn-secondary loader">Secondary</button>
+                    <button type="button" class="btn btn-raised btn-success loader">Success</button>
+                    <button type="button" class="btn btn-raised btn-danger loader">Danger</button>
+                    <button type="button" class="btn btn-raised btn-warning loader">Warning</button>
+                    <button type="button" class="btn btn-raised btn-info loader">Info</button>
+                    <button type="button" class="btn btn-raised btn-light loader">Light</button>
+                    <button type="button" class="btn btn-raised btn-dark loader">Dark</button>
+
+                    <h5 class="mt-30">Raised Outline</h5>
+                    <hr>
+                    <button type="button" class="btn btn-raised btn-outline-primary loader">Primary</button>
+                    <button type="button" class="btn btn-raised btn-outline-secondary loader">Secondary</button>
+                    <button type="button" class="btn btn-raised btn-outline-success loader">Success</button>
+                    <button type="button" class="btn btn-raised btn-outline-danger loader">Danger</button>
+                    <button type="button" class="btn btn-raised btn-outline-warning loader">Warning</button>
+                    <button type="button" class="btn btn-raised btn-outline-info loader">Info</button>
+                    <button type="button" class="btn btn-raised btn-outline-light loader">Light</button>
+                    <button type="button" class="btn btn-raised btn-outline-dark loader">Dark</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card-box">
+                  <div class="card-head">
+                    <div class="head-caption">
+                      <div class="head-title">
+                        <h4 class="head-text">Colors</h4>
+                      </div>
+                    </div>
+                    <div class="card-head-tools">
+                      <div class="dropdown">
+                        <a class="btn btn-icon btn-outline-light btn-raised float-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="icon ti-more-alt"></i>
+                        </a>
+                        <div class="dropdown-menu wrap dropdown-menu-right">
+                          <ul class="nav">
+                            <li class="nav-item"><a class="nav-link"><span class="nav-text">Create</span><div class="ripple-container"></div></a></li>
+                            <li class="nav-item"><a class="nav-link"><span class="nav-text">Add User</span></a></li>
+                            <li class="nav-item"><a class="nav-link"><span class="nav-text">Create New Task</span></a></li>
+                            <li class="nav-item"><a class="nav-link"><span class="nav-text">Register Member</span></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <p class="text-primary">.text-primary</p>
+                    <p class="text-secondary">.text-secondary</p>
+                    <p class="text-success">.text-success</p>
+                    <p class="text-danger">.text-danger</p>
+                    <p class="text-warning">.text-warning</p>
+                    <p class="text-info">.text-info</p>
+                    <p class="text-light bg-dark">.text-light</p>
+                    <p class="text-dark">.text-dark</p>
+                    <p class="text-muted">.text-muted</p>
+                    <p class="text-white bg-dark">.text-white</p>
+
+                    <pre class="bg-light p-15"><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-primary"</span><span class="nt">&gt;</span>.text-primary<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-secondary"</span><span class="nt">&gt;</span>.text-secondary<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-success"</span><span class="nt">&gt;</span>.text-success<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-danger"</span><span class="nt">&gt;</span>.text-danger<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-warning"</span><span class="nt">&gt;</span>.text-warning<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-info"</span><span class="nt">&gt;</span>.text-info<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-light bg-dark"</span><span class="nt">&gt;</span>.text-light<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-dark"</span><span class="nt">&gt;</span>.text-dark<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>.text-muted<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-white bg-dark"</span><span class="nt">&gt;</span>.text-white<span class="nt">&lt;/p&gt;</span></code></pre>
+                  </div>
+                </div>
+
+                <div class="card-box">
+                  <div class="card-head">
+                    <div class="head-caption">
+                      <div class="head-title">
+                        <h4 class="head-text">Default Timeline</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <ul class="timeline-list">
+                      <li class="timeline-list-item danger">
+                        <div class="timeline-list-badge"></div>
+                        <div class="timeline-list-text">12 new <span class="badge pill badge-danger">Danger</span></div>
+                        <div class="timeline-list-time">Just now</div>
+                      </li>
+                      <li class="timeline-list-item success">
+                        <div class="timeline-list-badge"></div>
+                        <div class="timeline-list-text">12 new <span class="badge pill badge-success">Approved</span></div>
+                        <div class="timeline-list-time">45 mins</div>
+                      </li>
+                      <li class="timeline-list-item disable">
+                        <div class="timeline-list-badge"></div>
+                        <div class="timeline-list-text">New invoice received <a class="link" href="">Check</a></div>
+                        <div class="timeline-list-time">1 hour</div>
+                      </li>
+                      <li class="timeline-list-item warning">
+                        <div class="timeline-list-badge"></div>
+                        <div class="timeline-list-text">New reports received</div>
+                        <div class="timeline-list-time">3 days</div>
+                      </li>
+                      <li class="timeline-list-item info">
+                        <div class="timeline-list-badge"></div>
+                        <div class="timeline-list-text">New order received</div>
+                        <div class="timeline-list-time">10 months</div>
+                      </li>
+                      <li class="timeline-list-item primary">
+                        <div class="timeline-list-badge"></div>
+                        <div class="timeline-list-text">New order received</div>
+                        <div class="timeline-list-time">10 months</div>
+                      </li>
+                      <li class="timeline-list-item">
+                        <div class="timeline-list-badge"></div>
+                        <div class="timeline-list-text">New order received</div>
+                        <div class="timeline-list-time">10 months</div>
+                      </li>
+                      <li class="timeline-list-item">
+                        <div class="timeline-list-badge"></div>
+                        <div class="timeline-list-text">New order received</div>
+                        <div class="timeline-list-time">10 months</div>
+                      </li>
+                      <li class="timeline-list-item">
+                        <div class="timeline-list-badge"></div>
+                        <div class="timeline-list-text">New order received</div>
+                        <div class="timeline-list-time">10 months</div>
+                      </li>
+                    </ul>
+
+                    <pre class="bg-light mt-15 p-15"><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"timeline-list"</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"timeline-list-item"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"timeline-list-badge"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"timeline-list-text"</span><span class="nt">&gt;</span>Text here<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"timeline-list-time"</span><span class="nt">&gt;</span>Date here<span class="nt">&lt;/div&gt;</span>
+ <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre>
+                  </div>
+                </div>
+
+                <div class="card-box">
+                  <div class="card-head">
+                    <div class="head-caption">
+                      <div class="head-title">
+                        <h4 class="head-text">Timeline 2</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <ul class="timeline2-list">
+                      <li class="timeline2-list-item primary">
+                        <div class="timeline2-list-time">
+                          1:00
+                          <span class="timeline2-list-meridian">AM</span>
+                        </div>
+                        <div class="timeline2-list-badge"></div>
+                        <div class="timeline2-list-text">
+                          Lorem ipsum dolor sit amit,consectetur eiusmdd tempor
+                          <br>
+                          incididunt ut labore et dolore magna
+                        </div>
+                      </li>
+                      <li class="timeline2-list-item danger">
+                        <div class="timeline2-list-time">
+                          5:00
+                          <span class="timeline2-list-meridian">Hours</span>
+                        </div>
+                        <div class="timeline2-list-badge"></div>
+                        <div class="timeline2-list-text">
+                          Lorem ipsum dolor sit amit,consectetur eiusmdd <a href="" class="link">LINK</a>
+                        </div>
+                      </li>
+                      <li class="timeline2-list-item success">
+                        <div class="timeline2-list-time">
+                          6:00
+                          <span class="timeline2-list-meridian">Days</span>
+                        </div>
+                        <div class="timeline2-list-badge"></div>
+                        <div class="timeline2-list-text">
+                          Lorem ipsum dolor sit amit,consectetur eiusmdd tempor <span class="badge pill badge-success">Badge</span>
+                        </div>
+                      </li>
+                      <li class="timeline2-list-item warning">
+                        <div class="timeline2-list-time">
+                          6:00
+                          <span class="timeline2-list-meridian">Month</span>
+                        </div>
+                        <div class="timeline2-list-badge"></div>
+                        <div class="timeline2-list-text">
+                          Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut labore et dolore magna
+                        </div>
+                      </li>
+                      <li class="timeline2-list-item info">
+                        <div class="timeline2-list-time">
+                          6:00
+                          <span class="timeline2-list-meridian">Year</span>
+                        </div>
+                        <div class="timeline2-list-badge"></div>
+                        <div class="timeline2-list-text">
+                          Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut labore et dolore magna
+                        </div>
+                      </li>
+                      <li class="timeline2-list-item disable">
+                        <div class="timeline2-list-time">
+                          6:00
+                        </div>
+                        <div class="timeline2-list-badge"></div>
+                        <div class="timeline2-list-text">
+                          Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut labore et dolore magna
+                        </div>
+                      </li>
+                    </ul>
+
+                    <pre class="bg-light mt-15 p-15"><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"timeline2-list"</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"timeline2-list-item"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"timeline2-list-time"</span><span class="nt">&gt;</span>Date here<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"timeline2-list-badge"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"timeline2-list-text"</span><span class="nt">&gt;</span>Text here<span class="nt">&lt;/div&gt;</span>
+ <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre>
+                  </div>
+                </div>
+
+                <div class="card-box">
+                  <div class="card-head">
+                    <div class="head-caption">
+                      <div class="head-title">
+                        <h4 class="head-text">Timeline 3</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <ul class="timeline3-list">
+                      <li class="timeline3-list-item primary">
+                        <div class="timeline3-list-time">1:00</div>
+                        <div class="timeline3-list-badge"></div>
+                        <div class="timeline3-list-text">
+                          Lorem ipsum dolor sit amit,consectetur eiusmdd tempor
+                          <span class="timeline3-list-user">
+                            <a href="#" class="link">By Mark</a>
+                          </span>
+                        </div>
+                      </li>
+                      <li class="timeline3-list-item danger">
+                        <div class="timeline3-list-time">5:00</div>
+                        <div class="timeline3-list-badge"></div>
+                        <div class="timeline3-list-text">
+                          Lorem ipsum dolor sit amit,consectetur eiusmdd
+                          <span class="timeline3-list-user">
+                            <a href="#" class="link">By Mark</a>
+                          </span>
+                        </div>
+                      </li>
+                      <li class="timeline3-list-item success">
+                        <div class="timeline3-list-time">6:00</div>
+                        <div class="timeline3-list-badge"></div>
+                        <div class="timeline3-list-text">
+                          Lorem ipsum dolor sit amit,consectetur eiusmdd tempor
+                          <span class="timeline3-list-user">
+                            <a href="#" class="link">By Mark</a>
+                          </span>
+                        </div>
+                      </li>
+                      <li class="timeline3-list-item warning">
+                        <div class="timeline3-list-time">6:00</div>
+                        <div class="timeline3-list-badge"></div>
+                        <div class="timeline3-list-text">
+                          Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut labore et dolore magna
+                          <span class="timeline3-list-user">
+                            <a href="#" class="link">By Mark</a>
+                          </span>
+                        </div>
+                      </li>
+                      <li class="timeline3-list-item info">
+                        <div class="timeline3-list-time">6:00</div>
+                        <div class="timeline3-list-badge"></div>
+                        <div class="timeline3-list-text">
+                          Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut labore et dolore magna
+                          <span class="timeline3-list-user">
+                            <a href="#" class="link">By Mark</a>
+                          </span>
+                        </div>
+                      </li>
+                      <li class="timeline3-list-item disable">
+                        <div class="timeline3-list-time">6:00</div>
+                        <div class="timeline3-list-badge"></div>
+                        <div class="timeline3-list-text">
+                          Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut labore et dolore magna
+                          <span class="timeline3-list-user">
+                            <a href="#" class="link">By Mark</a>
+                          </span>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <pre class="bg-light mt-15 p-15"><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"timeline3-list"</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"timeline3-list-item"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"timeline3-list-time"</span><span class="nt">&gt;</span>Date here<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"timeline3-list-badge"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"timeline3-list-text"</span><span class="nt">&gt;</span>Text here<span class="nt">&lt;/div&gt;</span>
+ <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="page-footer">
+        <div class="container">
+          <div class="d-flex">
+            <div class="footer-copyright">
+              <p class="mb-0">2018 &copy; <a href="https://xynapx.ph" class="link">Xynapx Framework</a>. All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./assets/js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="./assets/js/popper.js" type="text/javascript"></script>
+    <script src="./assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="./assets/js/plugins.min.js" type="text/javascript"></script>
+    <script src="./assets/js/modernizr.min.js" type="text/javascript"></script>
+    <script src="./assets/js/custom.js" type="text/javascript"></script>
+  </body>
+</html>
