@@ -22,40 +22,87 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
-  <body id="page" class="page">
-    <div class="page-body pt-0">
-      <div class="content-wrapper mb-0" style="background-image: url(assets/img/main/bg-3.jpg);">
+  <body id="page" class="page outer-page">
+    <div class="page-body">
+      <div class="content-wrapper">
         <div class="content">
-          <div class="login logo mt-5 mb-5 pt-5 text-center">
-            <img src="assets/img/main/logo.png">
-          </div>
-          <div class="login-wrap col-12 mx-auto px-0" style="max-width: 480px; webkit-box-shadow: 0px 5px 20px 1px rgba(62, 75, 78, .2);-moz-box-shadow: 0px 5px 20px 1px rgba(62, 75, 78, .2);box-shadow: 0px 5px 20px 1px rgba(62, 75, 78, .2);">
-            <div class="card-box" style="box-shadow: 0px 0 0 0 0;">
-              <div class="card-body">
-                <h4 class="text-center mb-3">Sign In</h4>
-                  <div class="alert alert-warning alert-dismissible fade show p-3 mb-2" role="alert">
-                    <p class="mb-0">Failed to login</p>
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                <div class="col-12">
-                  <div class="form-group bmd-form-group">
-                    <label class="bmd-label-static">Username</label>
-                    <input type="text" name="username" class="form-control" placeholder="Enter Username" required autofocus>
-                  </div>
+          <div class="login-wrapper">
+            <div class="logo">
+              <div class="login">
+                <h4>Login</h4>
+                <p>To use all features of the application</p>
+              </div>
+              <div class="register">
+                <h4>Create an account</h4>
+                <p>To use all features of the application</p>
+              </div>
+              <div class="logo">
+                <img src="assets/img/main/logo.png">
+              </div>
+            </div>
+            <div class="login-form">
+              <ul class="nav justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                  <form>
+                    <div class="alert alert-warning alert-icon alert-dismissible fade show" role="alert">
+                      <div class="alert-text">Failed to login</div>
+                      <div class="alert-right">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                          <i class="icon ti-close"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label class="bmd-label-floating">Username</label>
+                        <input type="text" name="username" class="form-control" required>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label class="bmd-label-floating">Password</label>
+                        <input type="password" name="password" class="form-control" required>
+                      </div>
+                    </div>
+                    <div class="col-12 mt-5">
+                      <button type="submit" class="btn btn-primary btn-raised btn-block btn-lg">Login</button>
+                    </div>
+                  </form>
                 </div>
-                <div class="col-12">
-                  <div class="form-group bmd-form-group">
-                    <label class="bmd-label-static">Password</label>
-                    <input type="password" name="password" class="form-control" placeholder="Enter Password" required autofocus>
-                  </div>
-                </div>
-                <div class="col-12 mt-5">
-                  <button type="submit" class="btn btn-info btn-raised btn-block btn-lg">Login</button>
-                </div>
-                <div class="col-12 text-center mt-4">
-                  <a class="" href="users/register">Register</a>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                  <form>
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                      <div class="alert-text">Failed to login</div>
+                      <div class="alert-right">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                          <i class="icon ti-close"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label class="bmd-label-floating">Username</label>
+                        <input type="text" name="username" class="form-control" required>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label class="bmd-label-floating">Password</label>
+                        <input type="password" name="password" class="form-control" required>
+                      </div>
+                    </div>
+                    <div class="col-12 mt-5">
+                      <button type="submit" class="btn btn-primary btn-raised btn-block btn-lg">Login</button>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -63,6 +110,15 @@
         </div>
       </div>
     </div>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="d-flex">
+          <div class="footer-copyright">
+            <p class="mb-0">2018 &copy; <a href="https://xynapx.ph" class="link">Xynapx Framework</a>. A Product of Xynapx Inc.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- footer -->
     <script src="assets/js/jquery-3.2.1.min.js" type="text/javascript"></script>
