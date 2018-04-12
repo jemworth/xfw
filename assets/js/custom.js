@@ -56,6 +56,74 @@ function buttonUp(){
   }
 }
 
+$('#sweet-basic').click(function(){
+  swal('Any fool can use a computer')
+});
+$('#sweet-reverse').click(function(){
+  swal({
+  title: 'Are you sure?',
+  text: "You won't be able to revert this!",
+  type: 'warning',
+  showCancelButton: true,
+  confirmButtonClass: "btn btn-danger",
+  cancelButtonClass: 'btn btn-light',
+  confirmButtonColor: '#3085d6',
+  cancelButtonColor: '#d33',
+  confirmButtonText: 'Yes, delete it!'
+  }).then((result) => {
+    if (result.value) {
+      swal(
+        'Deleted!',
+        'Your file has been deleted.',
+        'success'
+      )
+    }
+  })
+});
+$('#sweet-both').click(function(){
+  swal({
+    title: 'Are you sure?',
+    text: "You won't be able to revert this!",
+    type: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Yes, delete it!',
+    cancelButtonText: 'No, cancel!',
+    confirmButtonClass: 'btn btn-success',
+    cancelButtonClass: 'btn btn-danger',
+    buttonsStyling: false,
+    reverseButtons: true
+  }).then((result) => {
+    if (result.value) {
+      swal(
+        'Deleted!',
+        'Your file has been deleted.',
+        'success'
+      )
+    } else if (
+      // Read more about handling dismissals
+      result.dismiss === swal.DismissReason.cancel
+    ) {
+      swal(
+        'Cancelled',
+        'Your imaginary file is safe :)',
+        'error'
+      )
+    }
+  })
+});
+$('#sweet-noti').click(function(){
+  swal({
+    position: 'top-end',
+    type: 'success',
+    title: 'Your work has been saved',
+    showConfirmButton: false,
+    timer: 500
+  })
+});
+
+
 // Datatable Plugin
 var dataSet = [
   ["Tiger Nixon", "System Architect", "Edinburgh", "5421", "2011/04/25", "$320,800"],

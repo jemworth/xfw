@@ -298,13 +298,13 @@
                       <span class="nav-text">Authentication Page</span>
                     </a>
                   </li>
-                  <li class="nav-item active">
+                  <li class="nav-item">
                     <a href="alerts.html" class="nav-link">
                       <i class="icon left bullet"></i>
                       <span class="nav-text">Alerts</span>
                     </a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item active">
                     <a href="modal.html" class="nav-link">
                       <i class="icon left bullet"></i>
                       <span class="nav-text">Modal</span>
@@ -382,7 +382,7 @@
           <div class="subheader">
             <div class="d-flex align-items-center">
               <div class="title mr-auto">
-                <h3>Alerts</h3>
+                <h3>Modal</h3>
                 <ul class="breadcrumb">
                   <li class="nav-item">
                     <a href="#" class="nav-link">
@@ -405,7 +405,7 @@
                   <li class="nav-item">
                     <a href="" class="nav-link">
                       <span class="nav-text">
-                        Alerts
+                        Modal
                       </span>
                     </a>
                   </li>
@@ -432,149 +432,121 @@
                   <div class="card-head">
                     <div class="head-caption">
                       <div class="head-title">
-                        <h4 class="head-text">Message Alert</h4>
+                        <h4 class="head-text">Basic Modal</h4>
                       </div>
                     </div>
-                    <div class="card-head-tools">
-                    </div>
+                    <div class="card-head-tools"></div>
                   </div>
                   <div class="card-body">
-<pre class="bg-light p-15"><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"message alert alert-primary"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
-  This is a primary alert—check it out!
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"message alert alert-secondary"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
-  This is a secondary alert—check it out!
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"message alert alert-success"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
-  This is a success alert—check it out!
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"message alert alert-danger"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
-  This is a danger alert—check it out!
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"message alert alert-warning"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
-  This is a warning alert—check it out!
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"message alert alert-info"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
-  This is a info alert—check it out!
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"message alert alert-light"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
-  This is a light alert—check it out!
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"message alert alert-dark"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
-  This is a dark alert—check it out!
-<span class="nt">&lt;/div&gt;</span></code></pre>
-                   
-                   <h5 class="mt-10">Add Shadow</h5>
-                   <pre class="bg-light p-15"><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"message alert has-shadow"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
-  This is a primary alert—check it out!
-<span class="nt">&lt;/div&gt;</span></code></pre>
+                    <!-- Default modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                      Default modal
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <i class="icon ti-close"></i>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            ...
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Large modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+
+                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <i class="icon ti-close"></i>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            ...
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Small modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Small modal</button>
+
+                    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <i class="icon ti-close"></i>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            ...
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
                   </div>
                 </div>
               </div>
               <div class="col-xl-6">
-                <div class="message alert" role="alert">
-                  <div class="alert-text">Default Message - Use for alert on top of the page, combine bootstrap alert</div>
-                </div>
-                <div class="my-20"></div>
-                <div class="message alert-primary alert-icon alert" role="alert">
-                  <div class="alert-left">
-                    <i class="icon flaticon-exclamation"></i>
+                <div class="card-box">
+                  <div class="card-head">
+                    <div class="head-caption">
+                      <div class="head-title">
+                        <h4 class="head-text">Sweet Alert</h4>
+                      </div>
+                    </div>
+                    <div class="card-head-tools"></div>
                   </div>
-                  <div class="alert-text">Default Message - Use for alert on top of the page, combine bootstrap alert</div>
-                </div>
-                <div class="my-20"></div>
-                <div class="alert" role="alert">
-                  <div class="alert-text">Alert Default</div>
-                </div>
-                <div class="my-20"></div>
-                <div class="my-20"></div>
-                <div class="alert alert-primary" role="alert">
-                  <div class="alert-text">Alert Primary</div>
-                </div>
-                <div class="my-20"></div>
-                <div class="my-20"></div>
-                <div class="alert alert-secondary" role="alert">
-                  <div class="alert-text">Alert Seconday</div>
-                </div>
-                <div class="my-20"></div>
-                <div class="my-20"></div>
-                <div class="alert alert-success" role="alert">
-                  <div class="alert-text">Alert Success</div>
-                </div>
-                <div class="my-20"></div>
-                <div class="alert alert-danger" role="alert">
-                  <div class="alert-text">Alert Danger</div>
-                </div>
-                <div class="my-20"></div>
-                <div class="alert alert-warning" role="alert">
-                  <div class="alert-text">Alert Warning</div>
-                </div>
-                <div class="my-20"></div>
-                <div class="alert alert-info" role="alert">
-                  <div class="alert-text">Alert Info</div>
-                </div>
-                <div class="my-20"></div>
-                <div class="alert alert-light" role="alert">
-                  <div class="alert-text">Alert Light</div>
-                </div>
-                <div class="my-20"></div>
-                <div class="alert alert-dark" role="alert">
-                  <div class="alert-text">Alert Dark</div>
-                </div>
-                <div class="my-20"></div>
-                <div class="alert alert-icon alert-primary" role="alert">
-                  <div class="alert-left">
-                    <i class="icon flaticon-exclamation"></i>
-                  </div>
-                  <div class="alert-text">Alert Has Icon</div>
-                </div>
-                <div class="my-20"></div>
-                <div class="alert alert-icon alert-primary" role="alert">
-                  <div class="alert-left">
-                    <i class="icon flaticon-exclamation"></i>
-                  </div>
-                  <div class="alert-text">Alert Has Icon</div>
-                </div>
-                <div class="my-20"></div>
-                <div class="alert alert-primary alert-outline" role="alert">
-                  <div class="alert-text">Alert Outline</div>
-                </div>
-                <div class="my-20"></div>
-                <div class="alert alert-success alert-icon alert-outline" role="alert">
-                  <div class="alert-left">
-                    <i class="icon flaticon-exclamation"></i>
-                  </div>
-                  <div class="alert-text">Alert Outline</div>
-                </div>
-                <div class="my-20"></div>
-                <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                  <div class="alert-text">Alert Has Icon and dismissible</div>
-                  <div class="alert-right">
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                      <i class="icon ti-close"></i>
+                  <div class="card-body">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                      Open modal
                     </button>
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal with Sweet Alert</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <i class="icon ti-close"></i>
+                            </button>
+                          </div>
+                          <div class="modal-body">                    
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-warning" onclick="adddata()">Add</button>
+                            <button type="button" class="btn btn-light" onclick="modalclose()">Close</button>
+                            <button type="button" class="btn btn-primary" onclick="savechanges()">Save</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="window-open" href="">Pop Up</a>
                   </div>
-                </div>
-                <div class="alert alert-icon alert-danger alert-dismissible fade show" role="alert">
-                  <div class="alert-left">
-                    <i class="icon flaticon-exclamation"></i>
-                  </div>
-                  <div class="alert-text">Alert Has Icon and dismissible</div>
-                  <div class="alert-right">
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                      <i class="icon ti-close"></i>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="alert-text-only alert-primary">
-                  <div class="alert-text">Alert Text only</div>
-                </div>
-                <div class="alert-text-only alert-icon alert-danger">
-                  <div class="alert-left">
-                    <i class="icon flaticon-exclamation"></i>
-                  </div>
-                  <div class="alert-text">Alert Text only with icon</div>
                 </div>
               </div>
             </div>
@@ -597,5 +569,61 @@
     <script src="./assets/js/plugins.min.js" type="text/javascript"></script>
     <script src="./assets/js/modernizr.min.js" type="text/javascript"></script>
     <script src="./assets/js/custom.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      function adddata() {
+        $('#myModal').modal('hide');
+        swal({
+          title: "An input!",
+          text: "Write something interesting:",
+          showCancelButton: true,
+          confirmButtonClass: 'btn btn-success',
+          cancelButtonClass: 'btn btn-danger',
+          closeOnConfirm: true,
+          inputPlaceholder: "Write something",
+          customClass: 'animated zoomIn'
+        });
+      }
+
+      function modalclose() {
+        swal({
+          title: "Are you sure you want to exit?",
+          text: "You will not be able to save and recover this imaginary file!",
+          type: "warning",
+          showCancelButton: true,
+          confirmButtonClass: "btn-danger",
+          confirmButtonText: "Yes",
+          cancelButtonText: "Cancel",
+          closeOnConfirm: false,
+          closeOnCancel: false
+        },
+        function(result) {
+          if (result) {
+            $('#myModal').modal('hide');
+            swal("Goodbye!", "Your imaginary file has not been save.", "success");
+          } else {
+            swal("Cancelled", "Your imaginary file is safe :)", "error");
+          }
+        });
+      }
+
+      function savechanges() {
+        $('#myModal').modal('hide');
+        swal("Good job!", "Your imaginary file has been successfully save!", "success");
+      }
+
+      $('.window-open').click(function(e){
+          var content = $('html').html();
+          openPopup(content);
+      });
+      function openPopup(content){ 
+          winpops = window.open(
+              '',
+              'Popup Name',
+              'fullscreen=no, toolbar=yes, status=yes, menubar=yes, scrollbars=yes, resizable=yes, directories=yes, location=yes, width=500, height=400, left=100, top=100, screenX=100, screenY=100');
+           
+          // Write the content to the popup
+          winpops.document.write('<div id="content">'+content+'</div>');
+      }
+    </script>
   </body>
 </html>

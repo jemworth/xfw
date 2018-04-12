@@ -15,7 +15,7 @@
         }
       });
     </script>
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style.min.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="assets/img/main/favicon.png" />
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -274,10 +274,40 @@
                       <span class="nav-text">Forms</span>
                     </a>
                   </li>
-                  <li class="nav-item active">
+                  <li class="nav-item">
+                    <a href="view-form.html" class="nav-link">
+                      <i class="icon left bullet"></i>
+                      <span class="nav-text">View Form</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
                     <a href="content-button.html" class="nav-link">
                       <i class="icon left bullet"></i>
                       <span class="nav-text">Content Buttons</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="tables.html" class="nav-link">
+                      <i class="icon left bullet"></i>
+                      <span class="nav-text">Tables</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="401.html" class="nav-link">
+                      <i class="icon left bullet"></i>
+                      <span class="nav-text">Authentication Page</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="alerts.html" class="nav-link">
+                      <i class="icon left bullet"></i>
+                      <span class="nav-text">Alerts</span>
+                    </a>
+                  </li>
+                  <li class="nav-item active">
+                    <a href="modal.html" class="nav-link">
+                      <i class="icon left bullet"></i>
+                      <span class="nav-text">Modal</span>
                     </a>
                   </li>
                 </ul>
@@ -352,7 +382,7 @@
           <div class="subheader">
             <div class="d-flex align-items-center">
               <div class="title mr-auto">
-                <h3>View Form</h3>
+                <h3>Modal</h3>
                 <ul class="breadcrumb">
                   <li class="nav-item">
                     <a href="#" class="nav-link">
@@ -375,7 +405,7 @@
                   <li class="nav-item">
                     <a href="" class="nav-link">
                       <span class="nav-text">
-                        View Form
+                        Modal
                       </span>
                     </a>
                   </li>
@@ -396,196 +426,191 @@
             </div>
           </div>
           <div class="content">
-            <div class="card-box">
-              <div class="card-head">
-                <div class="head-caption">
-                  <div class="head-title">
-                    <h4 class="head-text">Personal Information</h4>
+            <div class="row">
+              <div class="col-xl-6">
+                <div class="card-box">
+                  <div class="card-head">
+                    <div class="head-caption">
+                      <div class="head-title">
+                        <h4 class="head-text">Basic Modal</h4>
+                      </div>
+                    </div>
+                    <div class="card-head-tools"></div>
                   </div>
-                </div>
-                <div class="card-head-tools">
-                  <button class="btn btn-xs btn-primary float-right" data-toggle="tooltip" data-placement="top" title="Edit"><i class="icon flaticon-edit"></i></button>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="view-form">
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <div class="view-group">
-                        <h6 class="label-value">First Name</h6>
-                        <p class="input-value">Mark</p>
-                      </div>
-                      <div class="view-group">
-                        <h6 class="label-value">Last Name</h6>
-                        <p class="input-value">Xynapx</p>
-                      </div>
-                      <div class="view-group">
-                        <h6 class="label-value">Middle Name</h6>
-                        <p class="input-value">Incorporated</p>
-                      </div>
-                      <div class="view-group">
-                        <h6 class="label-value">Birth Date</h6>
-                        <p class="input-value">February 18, 1945</p>
-                      </div>
-                      <div class="view-group">
-                        <h6 class="label-value">Birth Place</h6>
-                        <p class="input-value">Vicente Sotto Medical Center, Cebu City, Cebu</p>
+                  <div class="card-body">
+                    <!-- Default modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                      Default modal
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h4 class="modal-title" id="exampleModalLabel">Modal title</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <i class="icon ti-close"></i>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            ...
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save</button>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="col-lg-6">
-                      <div class="view-group">
-                        <h6 class="label-value">Age</h6>
-                        <p class="input-value">30</p>
-                      </div>
-                      <div class="view-group">
-                        <h6 class="label-value">Civil Status</h6>
-                        <p class="input-value">Complicated</p>
-                      </div>
-                      <div class="view-group">
-                        <h6 class="label-value">Phone Number</h6>
-                        <p class="input-value">+63 123 4567 890</p>
-                      </div>
-                      <div class="view-group">
-                        <h6 class="label-value">Email Address</h6>
-                        <p class="input-value">mark@xynapx.ph</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="view-title">
-                        <h5>Education</h5>
+
+                    <!-- Large modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+
+                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h4 class="modal-title" id="exampleModalLabel">Modal title</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <i class="icon ti-close"></i>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            ...
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save</button>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="col-lg-4">
-                      <div class="view-group">
-                        <h6 class="label-value">College</h6>
-                        <p class="input-value">University of Xynapx<br>Bachelor of Information Technology<br>2009-2013</p>
+
+                    <!-- Small modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Small modal</button>
+
+                    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h4 class="modal-title" id="exampleModalLabel">Modal title</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <i class="icon ti-close"></i>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            ...
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save</button>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="col-lg-4">
-                      <div class="view-group">
-                        <h6 class="label-value">High School</h6>
-                        <p class="input-value">University of Xynapx<br>2009-2013</p>
-                      </div>
-                    </div>
-                    <div class="col-lg-4">
-                      <div class="view-group">
-                        <h6 class="label-value">Elementary School</h6>
-                        <p class="input-value">University of Xynapx<br>2009-2013</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="view-title">
-                        <h5>Parents Name</h5>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="view-group">
-                        <h6 class="label-value">Fathers Name</h6>
-                        <p class="input-value">Marky Xynapx</p>
-                      </div>
-                      <div class="view-group">
-                        <h6 class="label-value">Contact</h6>
-                        <p class="input-value">+63 123 4567 890</p>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="view-group">
-                        <h6 class="label-value">Mothers Name</h6>
-                        <p class="input-value">Apple Xynapx</p>
-                      </div>
-                      <div class="view-group">
-                        <h6 class="label-value">Contact</h6>
-                        <p class="input-value">+63 123 4567 890</p>
-                      </div>
-                    </div>
+
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="card-box">
-              <div class="card-head">
-                <div class="head-caption">
-                  <div class="head-title">
-                    <h4 class="head-text">Company Information</h4>
+              <div class="col-xl-6">
+                <div class="card-box">
+                  <div class="card-head">
+                    <div class="head-caption">
+                      <div class="head-title">
+                        <h4 class="head-text">Sweet Alert</h4>
+                      </div>
+                    </div>
+                    <div class="card-head-tools"></div>
                   </div>
-                </div>
-                <div class="card-head-tools">
-                  <button class="btn btn-xs btn-primary float-right" data-toggle="tooltip" data-placement="top" title="Edit"><i class="icon flaticon-edit"></i></button>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="view-form">
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <div class="view-group">
-                        <h6 class="label-value">Job Title</h6>
-                        <p class="input-value">Software Engineer</p>
-                      </div>
-                      <div class="view-group">
-                        <h6 class="label-value">Started Work</h6>
-                        <p class="input-value">February 16, 2018</p>
-                      </div>
-                      <div class="view-group">
-                        <h6 class="label-value">Salary</h6>
-                        <p class="input-value">30,000</p>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="view-group">
-                        <h6 class="label-value">Years In The Company</h6>
-                        <p class="input-value">2</p>
-                      </div>
-                      <div class="view-group">
-                        <h6 class="label-value">Retire</h6>
-                        <p class="input-value">February 16, 2018</p>
+                  <div class="card-body">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                      Open modal
+                    </button>
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h4 class="modal-title" id="exampleModalLabel">Modal with Sweet Alert</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <i class="icon ti-close"></i>
+                            </button>
+                          </div>
+                          <div class="modal-body">                    
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-warning" onclick="adddata()">Add</button>
+                            <button type="button" class="btn btn-light" onclick="modalclose()">Close</button>
+                            <button type="button" class="btn btn-primary" onclick="savechanges()">Save</button>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card-box">
-              <div class="card-head">
-                <div class="head-caption">
-                  <div class="head-title">
-                    <h4 class="head-text">Work History</h4>
-                  </div>
-                </div>
-                <div class="card-head-tools">
-                  <button class="btn btn-xs btn-primary float-right" data-toggle="tooltip" data-placement="top" title="Edit"><i class="icon flaticon-edit"></i></button>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="view-form">
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <div class="view-group">
-                        <h6 class="label-value">Job Title</h6>
-                        <p class="input-value">Software Engineer</p>
-                      </div>
-                      <div class="view-group">
-                        <h6 class="label-value">Started Work</h6>
-                        <p class="input-value">February 16, 2018</p>
-                      </div>
-                      <div class="view-group">
-                        <h6 class="label-value">Salary</h6>
-                        <p class="input-value">30,000</p>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="view-group">
-                        <h6 class="label-value">Years In The Company</h6>
-                        <p class="input-value">2</p>
-                      </div>
-                      <div class="view-group">
-                        <h6 class="label-value">Retire</h6>
-                        <p class="input-value">February 16, 2018</p>
-                      </div>
-                    </div>
+                    <script type="text/javascript">
+                      function adddata() {
+                        $('#myModal').modal('hide');
+                        swal({
+                          title: "An input!",
+                          text: "Write something interesting:",
+                          showCancelButton: true,
+                          confirmButtonClass: 'btn btn-primarys',
+                          cancelButtonClass: 'btn btn-danger',
+                          closeOnConfirm: true,
+                          inputPlaceholder: "Write something",
+                          customClass: 'animated zoomIn'
+                        });
+                      }
+
+                      function modalclose() {
+                        swal({
+                          title: "Are you sure you want to exit?",
+                          text: "You will not be able to save and recover this imaginary file!",
+                          type: "warning", // Enable warning , error , success , info and question state icons
+                          showCancelButton: true,
+                          confirmButtonClass: "btn btn-danger",
+                          cancelButtonClass: 'btn btn-light',
+                          confirmButtonText: "Yes",
+                          cancelButtonText: "Cancel",
+                          closeOnConfirm: false,
+                          closeOnCancel: false
+                        },
+                        function(result) {
+                          if (result) {
+                            $('#myModal').modal('hide');
+                            swal("Goodbye!", "Your imaginary file has not been save.", "success");
+                          } else {
+                            swal("Cancelled", "Your imaginary file is safe :)", "error");
+                          }
+                        });
+                      }
+                      function savechanges() {
+                        $('#myModal').modal('hide');
+                        swal({
+                          title: "Good job!", 
+                          text:  "Your imaginary file has been successfully save!",
+                          type:  "success", // Enable warning , error , success , info and question state icons
+                          confirmButtonClass: "btn btn-primary"
+                        });
+                      }
+                    </script>
+
+                    <hr>
+                    <p>A basic message</p>
+                    <button type="button" id="sweet-basic" class="btn btn-primary">
+                      Click
+                    </button>
+                    <p class="mt-15">A warning message, with a function attached</p>
+                    <button type="button" id="sweet-reverse" class="btn btn-primary">
+                      Click
+                    </button>
+                    <p class="mt-15">A warning message, with a function attached both</p>
+                    <button type="button" id="sweet-both" class="btn btn-primary">
+                      Click
+                    </button>
+                    <p class="mt-15">A custom positioned dialog</p>
+                    <button type="button" id="sweet-noti" class="btn btn-primary">
+                      Click
+                    </button>
+
                   </div>
                 </div>
               </div>

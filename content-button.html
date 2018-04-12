@@ -16,7 +16,7 @@
       });
     </script>
 
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style.min.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="assets/img/main/favicon.png" />
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -111,37 +111,129 @@
             <div id="header-topbar" class="header-topbar">
               <div class="nav-wrapper navbar-collapse">
                 <ul class="navbar-nav icons">
-                  <li class="nav-item dropdown">
-                    <a href="#" role="button" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon flaticon-music-2"></i></a>
-                    <div class="dropdown-menu wrap dropdown-menu-right" aria-labelledby="btn-notification">
-                      <ul class="nav">
-                        <li class="nav-item"><a class="nav-link"><span class="nav-text">Create</span></a></li>
-                        <li class="nav-item"><a class="nav-link"><span class="nav-text">Add User</span></a></li>
-                        <li class="nav-item"><a class="nav-link"><span class="nav-text">Create New Task</span></a></li>
-                        <li class="nav-item"><a class="nav-link"><span class="nav-text">Complete Tasks</span></a></li>
-                      </ul>
+                  <li class="nav-item dropdown large header-bg-fill">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon flaticon-grid-menu"></i></a>
+                    <div class="dropdown-menu wrap dropdown-menu-right">
+                      <div class="dropdown-header">
+                        <span class="dropdown-title">Quick Actions</span>
+                        <span class="dropdown-sub-title">Shortcuts</span>
+                      </div>
+                      <div class="nav-grid">
+                        <div class="nav-grid-row">
+                          <a href="" class="nav-grid-link">
+                            <i class="icon flaticon-file"></i>
+                            <span class="nav-grid-text">Check Records</span>
+                          </a>
+                          <a href="" class="nav-grid-link">
+                            <i class="icon flaticon-user"></i>
+                            <span class="nav-grid-text">Add Member</span>
+                          </a>
+                        </div>
+                        <div class="nav-grid-row">
+                          <a href="" class="nav-grid-link">
+                            <i class="icon flaticon-users"></i>
+                            <span class="nav-grid-text">View Member</span>
+                          </a>
+                          <a href="" class="nav-grid-link">
+                            <i class="icon flaticon-location"></i>
+                            <span class="nav-grid-text">Leaves</span>
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a href="#" role="button" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon flaticon-network"></i></a>
+                  <li class="nav-item dropdown large header-bg-fill">
+                    <!-- Add class "has-notification" if notification is not empty -->
+                    <a href="#" class="nav-link dropdown-toggle has-notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="badge badge-danger notification-badge"> </span><i class="icon flaticon-music-2"></i></a>
                     <div class="dropdown-menu wrap dropdown-menu-right">
-                      <ul class="nav">
-                        <li class="nav-item"><a class="nav-link"><span class="nav-text">Create</span></a></li>
-                        <li class="nav-item"><a class="nav-link"><span class="nav-text">Add User</span></a></li>
-                        <li class="nav-item"><a class="nav-link"><span class="nav-text">Create New Task</span></a></li>
-                        <li class="nav-item"><a class="nav-link"><span class="nav-text">Complete Tasks</span></a></li>
-                      </ul>
+                      <div class="dropdown-header">
+                        <span class="dropdown-title">5 new</span>
+                        <span class="dropdown-sub-title">User Notifications</span>
+                      </div>
+                      <div class="dropdown-body">
+                        <div class="scrollable-wrap">
+                          <ul class="timeline-list">
+                            <li class="timeline-list-item danger">
+                              <div class="timeline-list-badge"></div>
+                              <div class="timeline-list-text">12 new <span class="badge pill badge-danger">Danger</span></div>
+                              <div class="timeline-list-time">Just now</div>
+                            </li>
+                            <li class="timeline-list-item success">
+                              <div class="timeline-list-badge"></div>
+                              <div class="timeline-list-text">12 new <span class="badge pill badge-success">Approved</span></div>
+                              <div class="timeline-list-time">45 mins</div>
+                            </li>
+                            <li class="timeline-list-item disable">
+                              <div class="timeline-list-badge"></div>
+                              <div class="timeline-list-text">New invoice received <a class="link" href="">Check</a></div>
+                              <div class="timeline-list-time">1 hour</div>
+                            </li>
+                            <li class="timeline-list-item warning">
+                              <div class="timeline-list-badge"></div>
+                              <div class="timeline-list-text">New reports received</div>
+                              <div class="timeline-list-time">3 days</div>
+                            </li>
+                            <li class="timeline-list-item info">
+                              <div class="timeline-list-badge"></div>
+                              <div class="timeline-list-text">New order received</div>
+                              <div class="timeline-list-time">10 months</div>
+                            </li>
+                            <li class="timeline-list-item primary">
+                              <div class="timeline-list-badge"></div>
+                              <div class="timeline-list-text">New order received</div>
+                              <div class="timeline-list-time">10 months</div>
+                            </li>
+                            <li class="timeline-list-item">
+                              <div class="timeline-list-badge"></div>
+                              <div class="timeline-list-text">New order received</div>
+                              <div class="timeline-list-time">10 months</div>
+                            </li>
+                            <li class="timeline-list-item">
+                              <div class="timeline-list-badge"></div>
+                              <div class="timeline-list-text">New order received</div>
+                              <div class="timeline-list-time">10 months</div>
+                            </li>
+                            <li class="timeline-list-item">
+                              <div class="timeline-list-badge"></div>
+                              <div class="timeline-list-text">New order received</div>
+                              <div class="timeline-list-time">10 months</div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="dropdown-footer">
+                        <a class="btn btn-sm pill btn-outline-primary">View All</a>
+                      </div>
                     </div>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a href="#" role="button" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon ti-user"></i></a>
+                  <li class="nav-item dropdown top-user medium header-bg-fill">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="user-pic"><img src="./assets/img/main/profile-img.png"></span>
+                    </a>
                     <div class="dropdown-menu wrap dropdown-menu-right">
-                      <ul class="nav">
-                        <li class="nav-item"><a class="nav-link"><span class="nav-text">Create</span></a></li>
-                        <li class="nav-item"><a class="nav-link"><span class="nav-text">Add User</span></a></li>
-                        <li class="nav-item"><a class="nav-link"><span class="nav-text">Create New Task</span></a></li>
-                        <li class="nav-item"><a class="nav-link"><span class="nav-text">Complete Tasks</span></a></li>
-                      </ul>
+                      <div class="dropdown-header">
+                        <div class="card-user">
+                          <div class="card-user-pic">
+                            <img src="./assets/img/main/profile-img.png" class="img-rounded" alt="">
+                          </div>
+                          <div class="card-user-details">
+                            <span class="card-user-name">Mark Xynapx</span>
+                            <a href="mailto:mark.andre@gmail.com" class="card-user-email link">mark@xynapx.ph</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="dropdown-body">
+                        <ul class="nav">
+                          <li class="nav-item"><a class="nav-link"><i class="icon left flaticon-profile-1"></i><span class="nav-text">Profile</span></a></li>
+                          <li class="nav-item"><a class="nav-link"><i class="icon left flaticon-share"></i><span class="nav-text">Activity</span></a></li>
+                          <li class="nav-item"><a class="nav-link"><i class="icon left flaticon-chat-1"></i><span class="nav-text">Messages</span><span class="badge badge-success">2</span></a></li>
+                          <li class="nav-item"><a class="nav-link"><i class="icon left flaticon-cogwheel-2"></i><span class="nav-text">Settings</span></a></li>
+                          <li class="nav-item"><a class="nav-link"><i class="icon left flaticon-lock-1"></i><span class="nav-text">Change Password</span></a></li>
+                        </ul>
+                      </div>
+                      <div class="dropdown-footer">
+                        <a class="btn btn-sm pill btn-outline-primary">Logout</a>
+                      </div>
                     </div>
                   </li>
                 </ul>
@@ -183,10 +275,40 @@
                       <span class="nav-text">Forms</span>
                     </a>
                   </li>
+                  <li class="nav-item">
+                    <a href="view-form.html" class="nav-link">
+                      <i class="icon left bullet"></i>
+                      <span class="nav-text">View Form</span>
+                    </a>
+                  </li>
                   <li class="nav-item active">
                     <a href="content-button.html" class="nav-link">
                       <i class="icon left bullet"></i>
                       <span class="nav-text">Content Buttons</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="tables.html" class="nav-link">
+                      <i class="icon left bullet"></i>
+                      <span class="nav-text">Tables</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="401.html" class="nav-link">
+                      <i class="icon left bullet"></i>
+                      <span class="nav-text">Authentication Page</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="alerts.html" class="nav-link">
+                      <i class="icon left bullet"></i>
+                      <span class="nav-text">Alerts</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="modal.html" class="nav-link">
+                      <i class="icon left bullet"></i>
+                      <span class="nav-text">Modal</span>
                     </a>
                   </li>
                 </ul>
@@ -530,6 +652,25 @@
                     <button type="button" class="btn btn-raised btn-outline-info loader">Info</button>
                     <button type="button" class="btn btn-raised btn-outline-light loader">Light</button>
                     <button type="button" class="btn btn-raised btn-outline-dark loader">Dark</button>
+                  </div>
+                </div>
+
+                <div class="card-box">
+                  <div class="card-head">
+                    <div class="head-caption">
+                      <div class="head-title">
+                        <h4 class="head-text">Page Loader</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="pageload-wrapper">
+                      <div class="pageload-inner">
+                        <div class="pageload-text">
+                          <span>Please wait... <span class="loader"></span></span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -15,7 +15,7 @@
         }
       });
     </script>
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style.min.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="assets/img/main/favicon.png" />
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -25,82 +25,87 @@
   <body id="page" class="page outer-page">
     <div class="page-body">
       <div class="content-wrapper">
-        <div class="content">
+        <div class="login-page">
           <div class="login-wrapper">
-            <div class="logo">
-              <div class="login">
-                <h4>Login</h4>
-                <p>To use all features of the application</p>
-              </div>
-              <div class="register">
-                <h4>Create an account</h4>
-                <p>To use all features of the application</p>
-              </div>
-              <div class="logo">
-                <img src="assets/img/main/logo.png">
+            <div class="login-logo">
+              <div class="row">
+                <div class="col-12 signin-text">
+                  <h4>Sign In</h4>
+                  <p>Sign in to your account</p>
+                </div>
+                <div class="col-12 signup-text">
+                  <h4>Sign Up</h4>
+                  <p>Create an account to use all features of the application</p>
+                </div>
+                <div class="col-12 logo mt-auto">
+                  <img src="assets/img/main/logo-shadow.png">
+                </div>
               </div>
             </div>
             <div class="login-form">
-              <ul class="nav justify-content-center" id="myTab" role="tablist">
+              <ul class="nav nav-tabs justify-content-center" id="logintab" role="tablist">
                 <li class="nav-item">
-                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                  <a class="nav-link active" id="login-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Login</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                  <a class="nav-link" id="signup-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Sign Up</a>
                 </li>
               </ul>
-              <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+              <div class="tab-content" id="logintab-content">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="login-tab">
                   <form>
-                    <div class="alert alert-warning alert-icon alert-dismissible fade show" role="alert">
+                    <div class="alert alert-danger fade show" role="alert">
                       <div class="alert-text">Failed to login</div>
-                      <div class="alert-right">
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                          <i class="icon ti-close"></i>
-                        </button>
-                      </div>
                     </div>
-                    <div class="col-12">
-                      <div class="form-group">
-                        <label class="bmd-label-floating">Username</label>
-                        <input type="text" name="username" class="form-control" required>
+                    <div class="form-row">
+                      <div class="col-12">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Username</label>
+                          <input type="text" name="username" class="form-control" required>
+                        </div>
                       </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="form-group">
-                        <label class="bmd-label-floating">Password</label>
-                        <input type="password" name="password" class="form-control" required>
+                      <div class="col-12">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Password</label>
+                          <input type="password" name="password" class="form-control" required>
+                        </div>
                       </div>
-                    </div>
-                    <div class="col-12 mt-5">
-                      <button type="submit" class="btn btn-primary btn-raised btn-block btn-lg">Login</button>
+                      <div class="col-12">
+                        <button type="submit" class="btn btn-primary btn-raised btn-block btn-lg">Login</button>
+                      </div>
                     </div>
                   </form>
                 </div>
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="signup-tab">
                   <form>
-                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                      <div class="alert-text">Failed to login</div>
-                      <div class="alert-right">
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                          <i class="icon ti-close"></i>
-                        </button>
+                    <div class="form-row">
+                      <div class="col-12">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Username</label>
+                          <input type="text" name="username" class="form-control" required>
+                        </div>
                       </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="form-group">
-                        <label class="bmd-label-floating">Username</label>
-                        <input type="text" name="username" class="form-control" required>
+                      <div class="col-12">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Email</label>
+                          <input type="email" name="email" class="form-control" required>
+                        </div>
                       </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="form-group">
-                        <label class="bmd-label-floating">Password</label>
-                        <input type="password" name="password" class="form-control" required>
+                      <div class="col-12">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Password</label>
+                          <input type="password" name="password" class="form-control" required>
+                        </div>
                       </div>
-                    </div>
-                    <div class="col-12 mt-5">
-                      <button type="submit" class="btn btn-primary btn-raised btn-block btn-lg">Login</button>
+                      <div class="col-12">
+                        <div class="form-group">
+                          <label class="bmd-label-floating"> Repeat Password</label>
+                          <input type="password" name="password" class="form-control" required>
+                        </div>
+                      </div>
+                      <div class="col-12 mb-0">
+                        <button type="submit" class="btn btn-primary btn-raised btn-block btn-lg">Submit</button>
+                      </div>
                     </div>
                   </form>
                 </div>
@@ -127,5 +132,17 @@
     <script src="assets/js/plugins.min.js" type="text/javascript"></script>
     <script src="assets/js/modernizr.min.js" type="text/javascript"></script>
     <script src="assets/js/custom.js" type="text/javascript"></script>
+    <script>
+      $(document).ready(function(){
+        $("#login-tab").click(function(){
+          $(".signin-text").show();
+          $(".signup-text").hide();
+        });
+        $("#signup-tab").click(function(){
+          $(".signup-text").show();
+          $(".signin-text").hide();
+        });
+      });
+    </script>
   </body>
 </html>
