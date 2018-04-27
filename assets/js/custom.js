@@ -119,10 +119,9 @@ $('#sweet-noti').click(function(){
     type: 'success',
     title: 'Your work has been saved',
     showConfirmButton: false,
-    timer: 500
+    timer: 10000
   })
 });
-
 
 // Datatable Plugin
 var dataSet = [
