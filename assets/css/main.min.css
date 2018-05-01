@@ -3022,7 +3022,7 @@ tbody.collapse.show {
 }
 
 .dropdown-toggle:after {
-    display: inline-block;
+    display: inline-flex;
     width: 0;
     height: 0;
     margin-left: .255em;
@@ -15567,7 +15567,7 @@ fieldset[disabled][disabled] .has-danger .form-control {
 
 .bmd-form-group [class*=" bmd-label"],
 .bmd-form-group [class^=bmd-label] {
-    position: absolute;
+    position: relative;
     pointer-events: none;
     transition: all .3s ease
 }
@@ -15645,7 +15645,6 @@ fieldset[disabled][disabled] .has-danger .form-control {
 .bmd-form-group .is-focused .bmd-label-floating {
     top: 0;
     left: 0;
-    font-size: 13px;
     margin-bottom: 0
 }
 
@@ -18369,7 +18368,7 @@ select.selectpicker {
 }
 
 .bootstrap-select>.dropdown-toggle {
-  display: inline-block;
+  display: block;
   width: 100%;
   z-index: 1;
   box-shadow: 0 0 0 0 !important;
@@ -18514,7 +18513,6 @@ select.selectpicker {
 
 .bootstrap-select.btn-group .dropdown-toggle .filter-option {
   display: inline-flex;
-  overflow: hidden;
   width: 100%;
   text-align: left;
 }
@@ -18577,16 +18575,14 @@ select.selectpicker {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  display: table;
-  table-layout: fixed;
+  display: flex;
   width: 100%;
-  padding: 5px 15px 5px 10px!important;
+  padding: 8px 15px 8px 10px!important;
   text-transform: capitalize;
   color: #424242;
   font-weight: 300;
   transition: all .3s;
   vertical-align: middle;
-  min-height: 40px!important;
   text-decoration: none;
 }
 
@@ -18596,9 +18592,9 @@ select.selectpicker {
   font-size:10px;
   color:#a6c6dd;
   width:20px;
-  vertical-align:middle;
-  padding:0 20px 0 10px;
-  display:table-cell
+  line-height: 20px;
+  padding: 0 20px 0 5px;
+  display:inline-flex;
 }
 
 .bootstrap-select.btn-group .dropdown-menu li.selected a:before {
@@ -18620,8 +18616,7 @@ select.selectpicker {
 }
 
 .bootstrap-select.btn-group .dropdown-menu li a span.text {
-  display: table-cell;
-  vertical-align: middle;
+  display: inline-flex;
 }
 
 .bootstrap-select.btn-group .dropdown-menu li small {

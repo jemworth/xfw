@@ -463,7 +463,6 @@ ul.nav li.nav-item a.nav-link{
   font-size: 14px;
   text-transform:capitalize;
   color:#424242;
-  font-weight:300;
   transition:all .3s;
   vertical-align: middle;
   min-height:40px
@@ -2088,7 +2087,8 @@ input:-webkit-autofill:active {
 }
 .table-form{
   width:100%;
-  margin-bottom:15px
+  margin-bottom:15px;
+  white-space: normal;
 }
 .table-form:last-child{
   margin-bottom:0
@@ -2115,11 +2115,12 @@ input:-webkit-autofill:active {
   margin-right:10px
 }
 .table-form .form-label{
-  width: 150px
+  width: 170px
 }
 .table-form .form-input{
   max-width: 200px;
-  min-height: 41px
+  height: 41px;
+  max-height: 100%
 }
 .table-inner-1{
   width:100%;
@@ -2177,16 +2178,49 @@ input:-webkit-autofill:active {
   min-width: auto;
   letter-spacing: 0;
 }
-
+.table-form .form-input.double .bootstrap-select{
+  margin-bottom:6px
+}
+.table-form .form-input.double .bootstrap-select:last-child{
+  margin-bottom:0px
+}
+@media (min-width:1600px){
+  .table-form .form-input.double .bootstrap-select{
+    width:50%;
+    float:left
+  }
+  .table-form .form-input.double .bootstrap-select:first-child{
+    padding-right:5px
+  }
+  .table-form .form-input.double .bootstrap-select:last-child{
+    padding-left:5px
+  }
+}
 @media(max-width:1200px){
-  .table-form .form-label{
-    width: 100px
+  .table-form td{
+    display:inline-block;
+    margin-bottom:0
+  }
+  .table-form td.form-label{
+    width: 20%
+  }
+  .table-form .form-input{
+    width: 30%;
+    max-width:100%;
+    height:auto !important;
+  }
+  .table-form .separator{
+    display: block !important;
+    width: 100% !important;
   }
 }
 
 @media(max-width:1680px){
+  .table-form .form-label{
+    width: 150px
+  }
   .d-xxl-none{
-    display:none
+    display:none !important
   }
 }
 
@@ -2870,4 +2904,13 @@ input:-webkit-autofill:active {
   border-color:#14699e;
   color:#14699e;
   background:transparent
+}
+
+/* FF CSS */
+@-moz-document url-prefix() {
+  @media(max-width:1200px){
+    .table-form .form-input{
+      width: 29%;
+    }
+  }
 }
