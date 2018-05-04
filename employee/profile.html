@@ -833,7 +833,7 @@
                   <div class="card-head">
                     <div class="head-caption">
                       <div class="head-title">
-                        <h4 class="head-text">Mark Xynapx</h4>
+                        <h4 class="head-text">Mark Xynapx <small class="status">[Active]</small></h4>
                       </div>
                     </div>
                     <div class="card-head-tools">
@@ -852,76 +852,123 @@
                     </div>
                   </div>
                   <div class="card-body">
-                    <div class="view-row">
+                    <div class="data-view">
                       <div class="row">
                         <div class="col-12">
                           <div class="title">
-                            <h6><i class="icon left flaticon-profile-1"></i> Personal Information <span class="status">[Active]</span></h6>
+                            <h6><i class="icon left flaticon-profile-1"></i> Personal Information</h6>
                           </div>
                         </div>
-                        <div class="col-8">
-                          <table class="data-view">
+                        <div class="col-9">
+                          <table class="view-table">
                             <tr>
-                              <td class="view-title">ID Number :</td>
-                              <td class="view-data">201603</td>
+                              <td class="data-title">ID Number:</td>
+                              <td class="data-input">201603</td>
+                              <td colspan="4"></td>
                             </tr>
                             <tr>
-                              <td class="view-title">Last Name :</td>
-                              <td class="view-data">Xynapx ,</td>
-                              <td class="view-title">First Name :</td>
-                              <td class="view-data">Mark</td>
-                              <td class="view-title">Middle Name :</td>
-                              <td class="view-data">F.</td>
+                              <td class="data-title">Name:</td>
+                              <td class="data-input">Xynapx ,</td>
+                              <td class="data-input">Mark</td>
+                              <td class="data-input">F.</td>
+                              <td class="data-input">Jr.</td>
+                              <td class="data-input">PhD</td>
                             </tr>
                             <tr>
-                              <td class="view-title">Nickname :</td>
-                              <td class="view-data">Master</td>
-                              <td class="view-title">Suffix :</td>
-                              <td class="view-data">Jr.</td>
-                              <td class="view-title">Title :</td>
-                              <td class="view-data">PhD</td>
+                              <td class="data-title">Date of Birth:</td>
+                              <td class="data-input">July 14, 1993</td>
+                              <td class="data-title">Date of Place:</td>
+                              <td class="data-input">San Isidro, Talisay City, Cebu</td>
+                              <td class="data-title">Sex:</td>
+                              <td class="data-input">Unknown</td>
                             </tr>
                             <tr>
-                              <td class="view-title">Date of Birth :</td>
-                              <td class="view-data">July 14, 1993</td>
-                              <td class="view-title">Date of Place :</td>
-                              <td class="view-data">San Isidro, Talisay City, Cebu</td>
-                              <td class="view-title">Sex :</td>
-                              <td class="view-data">Unknown</td>
-                            </tr>
-                            <tr>
-                              <td class="view-title">Civil Status :</td>
-                              <td class="view-data">Single</td>
-                              <td class="view-title">Nationality :</td>
-                              <td class="view-data">Filipino</td>
-                              <td class="view-title">Language :</td>
-                              <td class="view-data">Cebuano, Tagalog, English</td>
+                              <td class="data-title">Civil Status:</td>
+                              <td class="data-input">Single</td>
+                              <td class="data-title">Nationality:</td>
+                              <td class="data-input">Filipino</td>
+                              <td class="data-title">Language:</td>
+                              <td class="data-input">Cebuano, Tagalog, English</td>
                             </tr>
                           </table>
                         </div>
-                        <div class="col-4 text-center">
+                        <div class="col-3 text-center">
                           <div class="employee-profile">
-                            <img src="./../assets/img/main/profile-img.png">
+                            <div class="mb-15">
+                              <img src="./../assets/img/main/profile-img.png">
+                            </div>
+                            <a class="btn btn-primary btn-raised pill btn-block">Upload Image</a>
                           </div>
                         </div>
                       </div>
                       <div class="row">
                         <div class="col-12">
-                          <ul class="nav nav-tabs" id="myTab" role="tablist">
+                          <ul class="nav nav-tabs" id="profile-info" role="tablist">
                             <li class="nav-item">
-                              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                              <a class="nav-link active" id="employeeinfo-tab" data-toggle="tab" href="#employeeinfo" role="tab"  aria-selected="true">
+                                <span class="nav-text">Employee Info</span>
+                              </a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                              <a class="nav-link" id="credentials-tab" data-toggle="tab" href="#credentials" role="tab"  aria-selected="false">Credentials</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                              <a class="nav-link" id="employment-tab" data-toggle="tab" href="#employment" role="tab"  aria-selected="false">Employment Info</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="leaves-tab" data-toggle="tab" href="#leaves" role="tab"  aria-selected="false">Leaves & Orders</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="attendace-tab" data-toggle="tab" href="#attendace" role="tab" " aria-selected="false">Attendance & Shifts</a>
                             </li>
                           </ul>
-                          <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                          <div class="tab-content mt-20" id="profile-info-content">
+                            <div class="tab-pane fade show active" id="employeeinfo" role="tabpanel" aria-labelledby="employeeinfo-tab">
+                              <div class="row">
+                                <div class="col-12">
+                                  <div class="title">
+                                    <h6><i class="icon left flaticon-profile-1"></i> Personal Information</h6>
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <table class="view-table">
+                                    <tr>
+                                      <td class="data-title">ID Number:</td>
+                                      <td class="data-input">201603</td>
+                                      <td colspan="4"></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="data-title">Name:</td>
+                                      <td class="data-input">Xynapx ,</td>
+                                      <td class="data-input">Mark</td>
+                                      <td class="data-input">F.</td>
+                                      <td class="data-input">Jr.</td>
+                                      <td class="data-input">PhD</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="data-title">Date of Birth:</td>
+                                      <td class="data-input">July 14, 1993</td>
+                                      <td class="data-title">Date of Place:</td>
+                                      <td class="data-input">San Isidro, Talisay City, Cebu</td>
+                                      <td class="data-title">Sex:</td>
+                                      <td class="data-input">Unknown</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="data-title">Civil Status:</td>
+                                      <td class="data-input">Single</td>
+                                      <td class="data-title">Nationality:</td>
+                                      <td class="data-input">Filipino</td>
+                                      <td class="data-title">Language:</td>
+                                      <td class="data-input">Cebuano, Tagalog, English</td>
+                                    </tr>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane fade" id="credentials" role="tabpanel" aria-labelledby="credentials-tab">...</div>
+                            <div class="tab-pane fade" id="employment" role="tabpanel" aria-labelledby="employment-tab">...</div>
+                            <div class="tab-pane fade" id="leaves" role="tabpanel" aria-labelledby="leaves-tab">...</div>
+                            <div class="tab-pane fade" id="attendace" role="tabpanel" aria-labelledby="attendace-tab">...</div>
                           </div>
                         </div>
                       </div>
