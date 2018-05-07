@@ -39,35 +39,27 @@ $('#sweet-reverse').click(function(){
     }
   })
 });
-$('#sweet-both').click(function(){
+$('#sweet-both,#save').click(function(){
   swal({
     title: 'Are you sure?',
-    text: "You won't be able to revert this!",
+    text: "You will change the new profile picture!",
     type: 'warning',
     showCancelButton: true,
     confirmButtonColor: '#3085d6',
     cancelButtonColor: '#d33',
-    confirmButtonText: 'Yes, delete it!',
     cancelButtonText: 'No, cancel!',
-    confirmButtonClass: 'btn btn-success',
+    confirmButtonText: 'Yes',
     cancelButtonClass: 'btn btn-danger',
+    confirmButtonClass: 'btn btn-success',
     buttonsStyling: false,
     reverseButtons: true
   }).then((result) => {
     if (result.value) {
+      $('.modal').modal('hide');
       swal(
-        'Deleted!',
-        'Your file has been deleted.',
+        'Successful!',
+        'Your profile picture has been change',
         'success'
-      )
-    } else if (
-      // Read more about handling dismissals
-      result.dismiss === swal.DismissReason.cancel
-    ) {
-      swal(
-        'Cancelled',
-        'Your imaginary file is safe :)',
-        'error'
       )
     }
   })
