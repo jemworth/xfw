@@ -15,66 +15,40 @@ $('.timepicker').datetimepicker({
 autosize(document.querySelectorAll('textarea'));
 $('.scrollable-wrap').scrollbar();
 
-$('#sweet-basic').click(function(){
-  swal('Any fool can use a computer')
+// Slide tab content - Important
+$('a[data-toggle="tab"]').on('hide.bs.tab', function (e) {
+  var $old_tab = $($(e.target).attr("href"));
+  var $new_tab = $($(e.relatedTarget).attr("href"));
+  if($new_tab.index() < $old_tab.index()){
+    $old_tab.css('position', 'relative').css("right", "0").show();
+    $old_tab.animate({"right":"-100%"}, 300, function () {
+      $old_tab.css("right", 0).removeAttr("style");
+    });
+  }
+  else {
+    $old_tab.css('position', 'relative').css("left", "0").show();
+    $old_tab.animate({"left":"-100%"}, 300, function () {
+      $old_tab.css("left", 0).removeAttr("style");
+    });
+  }
 });
-$('#sweet-reverse').click(function(){
-  swal({
-  title: 'Are you sure?',
-  text: "You won't be able to revert this!",
-  type: 'warning',
-  showCancelButton: true,
-  confirmButtonClass: "btn btn-danger",
-  cancelButtonClass: 'btn btn-light',
-  confirmButtonColor: '#3085d6',
-  cancelButtonColor: '#d33',
-  confirmButtonText: 'Yes, delete it!'
-  }).then((result) => {
-    if (result.value) {
-      swal(
-        'Deleted!',
-        'Your file has been deleted.',
-        'success'
-      )
-    }
-  })
-});
-$('#sweet-both,#save').click(function(){
-  swal({
-    title: 'Are you sure?',
-    text: "You will change the new profile picture!",
-    type: 'warning',
-    showCancelButton: true,
-    confirmButtonColor: '#3085d6',
-    cancelButtonColor: '#d33',
-    cancelButtonText: 'No, cancel!',
-    confirmButtonText: 'Yes',
-    cancelButtonClass: 'btn btn-danger',
-    confirmButtonClass: 'btn btn-success',
-    buttonsStyling: false,
-    reverseButtons: true
-  }).then((result) => {
-    if (result.value) {
-      $('.modal').modal('hide');
-      swal(
-        'Successful!',
-        'Your profile picture has been change',
-        'success'
-      )
-    }
-  })
-});
-$('#sweet-noti').click(function(){
-  swal({
-    position: 'top-end',
-    type: 'success',
-    title: 'Your work has been saved',
-    showConfirmButton: false,
-    timer: 10000
-  })
+$('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+  var $new_tab = $($(e.target).attr("href"));
+  var $old_tab = $($(e.relatedTarget).attr("href"));
+
+  if($new_tab.index() > $old_tab.index()){
+    $new_tab.css('position', 'relative').css("right", "-2500px");
+    $new_tab.animate({"right":"0"}, 500);
+  }
+  else {
+    $new_tab.css('position', 'relative').css("left", "-2500px");
+    $new_tab.animate({"left":"0"}, 500);
+  }
 });
 
 // Datatable Plugin
+
+// Employee List
 var dataSet = [
   ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "5421", "Tiger", "Nixon", "N.", "2011/04/25", "30", "Male", "Married", '<span class="badge badge-pill badge-success">Active</span>'],
   ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "8422", "Garrett", "Winters", "W.", "2001/04/25", "29", "Male", "Married", '<span class="badge badge-pill badge-success">Active</span>'],
@@ -178,4 +152,139 @@ myTable = $('#table1,#table2').DataTable({
     select.addClass("bootstrap-select select-sm pill");
     select.selectpicker();
   }
+});
+
+// Employee Profile - Family Member List
+var familyMembers = [
+  ["Tiger Nixon", "Spouse", "2011/04/25", "Married", "Nurse", "941 Canton Village, San Isidro, Talisay City, Cebu", "Yes"],
+  ["Garrett Winters", "Son", "2001/04/25", "Married", "Nurse", "Cebu City", "Yes"],
+  ["Ashton Cox", "Son", "2009/01/12", "Married", "Driver", "Talisay City", "No"],
+];
+
+var columnDefs2 = [ {
+  title: "Family"
+},{
+  title: "Relationship"
+}, {
+  title: "Birth Date"
+}, {
+  title: "Civil Status"
+}, {
+  title: "Occupation"
+}, {
+  title: "Address"
+}, {
+  title: "Dependent"
+}, {
+  title: "Actions",
+  "defaultContent": '<div class="dropdown sm text-center"><a class="btn btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon la la-ellipsis-h lg"></i></a><div class="dropdown-menu dropdown-menu-right"><ul class="nav"><li class="nav-item"><a class="nav-link"><i class="icon left la la-edit"></i><span class="nav-text">Edit</span></a></li><li class="nav-item"><button id="delete" type="button" class="nav-link"><i class="icon left la la-trash-o"></i><span class="nav-text">Delete</span></button></li><li class="nav-item"><a class="nav-link"><i class="icon left ti-printer"></i><span class="nav-text">Record Logs</span></a></li></ul></div></div>'
+}];
+
+var myTable2;
+
+myTable2 = $('#family-members').DataTable({
+  paginationType: "full_numbers",
+  data: familyMembers,
+  columns: columnDefs2,
+  dom: '<"datatable-body table-responsive"t> <"datatable-footer d-flex" <"datatable-pagination"> <"datatable-pager-info float-right ml-auto" <"d-flex" <"datatable-pager-size"> <"datatable-pager-detail"i> > > >', // Needs button container
+  select: true,
+  searching: true,
+  responsive: false,
+  "aLengthMenu": [[10,30,50,100], [10,30,50,100]],
+  language : {
+    "decimal":        "",
+    "emptyTable":     "No data available",
+    "info":           "Displaying _START_ - _END_ of _TOTAL_ records",
+    "infoEmpty":      "Displaying 0 - 0 of 0 records",
+    "infoFiltered":   "",
+    "infoPostFix":    "",
+    "thousands":      ",",
+    "lengthMenu":     "_MENU_",
+    "loadingRecords": 'Please Wait <div class="loader"></div>',
+    "processing":     'Processing <div class="loader"></div>',
+    "search":         "Search:",
+    "zeroRecords":    "No record found",
+    "paginate": {
+      "first":      '<i class="icon ti-angle-double-left"></i>',
+      "last":       '<i class="icon ti-angle-double-right"></i>',
+      "next":       '<i class="icon ti-angle-right"></i>',
+      "previous":   '<i class="icon ti-angle-left"></i>'
+    },
+    "aria": {
+      "sortAscending":  ": activate to sort column ascending",
+      "sortDescending": ": activate to sort column descending"
+    }
+  },
+  drawCallback : function(){
+    var length_select = $(".dataTables_length");
+    var select = $(".dataTables_length").find("select");
+    select.addClass("bootstrap-select select-sm pill");
+    select.selectpicker();
+  }
+});
+
+// Employee Profile - Family Members
+$('#family-members tbody tr td').click(function(){
+  $('#modal2').modal('show');
+});
+$('#family-members tbody tr td:last-child').off('click');
+
+// Alert Prompt
+$('#sweet-basic').click(function(){
+  swal('Any fool can use a computer')
+});
+$('#sweet-reverse,#delete').click(function(){
+  swal({
+  title: 'Are you sure?',
+  text: "You won't be able to revert this!",
+  type: 'warning',
+  showCancelButton: true,
+  confirmButtonClass: "btn btn-primary btn-raised pill",
+  cancelButtonClass: 'btn btn-outline-danger btn-raised pill',
+  confirmButtonColor: '#3085d6',
+  cancelButtonColor: '#d33',
+  confirmButtonText: 'Yes, delete it!'
+  }).then((result) => {
+    if (result.value) {
+      swal(
+        'Deleted!',
+        'Your file has been deleted.',
+        'success'
+      )
+    }
+  })
+});
+$('#sweet-both,#save').click(function(){
+  swal({
+    title: 'Are you sure?',
+    text: "You will change the new profile picture!",
+    type: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    cancelButtonText: 'No, cancel!',
+    confirmButtonText: 'Yes',
+    cancelButtonClass: 'btn btn-outline-danger btn-raised pill',
+    confirmButtonClass: 'btn btn-primary btn-raised pill',
+    buttonsStyling: false,
+    reverseButtons: true
+  }).then((result) => {
+    if (result.value) {
+      $('.modal').modal('hide');
+      swal(
+        'Successful!',
+        'Your profile picture has been change',
+        'success'
+      )
+    }
+  })
+});
+$('#sweet-noti').click(function(){
+  swal({
+    position: 'top-end',
+    type: 'success',
+    title: 'Your work has been saved',
+    showConfirmButton: false,
+    timer: 10000
+  })
 });
