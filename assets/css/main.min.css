@@ -1479,7 +1479,6 @@ pre code {
 .table {
     width: 100%;
     max-width: 100%;
-    margin-bottom: 1rem;
     background-color: transparent
 }
 
@@ -1520,7 +1519,7 @@ pre code {
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
-    background-color: rgba(0, 0, 0, .05)
+    background-color: #f2faff
 }
 
 .table-hover tbody tr:hover {
@@ -1639,9 +1638,7 @@ pre code {
 }
 
 .table .thead-light th {
-    color: #495057;
-    background-color: #e9ecef;
-    border-color: rgba(0, 0, 0, .06)
+    background-color: #f2f8fd;
 }
 
 .table-dark {
@@ -1753,7 +1750,7 @@ pre code {
 }
 
 .form-control.bootstrap-select>.btn {
-    background: #fbfbfb
+    background: #fbfbfb !important
 }
 
 .custom-file-control,
@@ -5166,6 +5163,13 @@ button.close {
     }
 }
 
+@media (min-width:1100px) {
+    .modal-xl {
+        max-width: 1000px
+    }
+}
+
+
 .tooltip {
     z-index: 1070;
     margin: 0;
@@ -5241,7 +5245,7 @@ button.close {
 .bs-tooltip-bottom .arrow:before {
     bottom: 0;
     border-width: 0 .4rem .4rem;
-    border-bottom-color: rgba(97, 97, 97, .9)
+    border-bottom-color: #e2f4ff
 }
 
 .bs-tooltip-auto[x-placement^=left],
@@ -5265,11 +5269,12 @@ button.close {
 
 .tooltip-inner {
     max-width: 200px;
-    padding: 3px 10px;
-    color: #fff;
+    padding: 7px 15px;
+    color: #494949;
+    background-color:#e2f4ff;
     text-align: center;
-    background-color: rgba(73, 73, 73, .9);
-    border-radius: .125rem
+    box-shadow: 0px 5px 20px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 30px
 }
 
 .popover {
@@ -6604,7 +6609,9 @@ button.bg-dark:hover {
 .w-10 {
     width: 10%!important
 }
-
+.w-8 {
+    width: 8%!important
+}
 .w-15 {
     width: 15%!important
 }
@@ -13412,7 +13419,7 @@ button:focus {
     text-transform: capitalize;
     letter-spacing: .03rem;
     cursor: pointer;
-    border: 0 #ccc;
+    border: 1px solid transparent;
     outline: 0;
     transition: all .3s ease-in-out;
     color: rgba(0, 0, 0, .87);
@@ -17523,9 +17530,9 @@ fieldset[disabled][disabled] .btn.btn-raised {
 .btn-group-sm .bmd-btn-fab.custom-file-control:before,
 .btn-group-sm .btn.bmd-btn-fab,
 .btn.bmd-btn-fab.bmd-btn-fab-sm {
-    width: 2.5rem;
-    min-width: 2.5rem;
-    height: 2.5rem
+    width: 30px;
+    min-width: 30px;
+    height: 30px
 }
 
 .bmd-btn-icon.custom-file-control:before,
@@ -22225,7 +22232,8 @@ select.selectpicker {
     padding: 5px 8px!important;
     height: 32px;
     color: #494949!important;
-    border: 1px solid #dedede
+    border: 1px solid #dedede;
+    overflow: hidden
 }
 
 .bootstrap-select>.dropdown-toggle:focus,
@@ -22361,7 +22369,7 @@ select.selectpicker {
     width: 100%;
     text-align: left;
     text-overflow: ellipsis;
-    overflow: hidden
+    white-space: pre-wrap;
 }
 
 .bootstrap-select.btn-group .bs-caret,
@@ -22419,7 +22427,7 @@ select.selectpicker {
     user-select: none;
     display: flex;
     width: 100%;
-    padding: 6px 15px 6px 10px!important;
+    padding: 7px 15px 7px 10px!important;
     text-transform: capitalize;
     color: #424242;
     transition: all .3s;
@@ -22457,7 +22465,8 @@ select.selectpicker {
 }
 
 .bootstrap-select.btn-group .dropdown-menu li a span.text {
-    display: inline-flex
+    display: inline-flex;
+    font-weight: 400
 }
 
 .bootstrap-select.btn-group .dropdown-menu li small {

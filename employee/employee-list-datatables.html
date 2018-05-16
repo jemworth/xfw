@@ -819,7 +819,7 @@
                 <h3><i class="icon left la la-group"></i> Employees <span class="counter">(74)</span></h3>
               </div>
               <div class="subheader-tools">
-                <a href="../employee/add-new.html" class="btn btn-primary btn-raised btn-md pill"><i class="icon left la la-plus lg"></i>Add New</a>
+                <a href="../employee/add-new.html" class="btn btn-primary btn-raised btn-md pill"><i class="icon left la la-plus lg"></i> Add New</a>
               </div>
             </div>
           </div>
@@ -836,245 +836,25 @@
                     <div class="card-head-tools">
                       <ul class="tools-list">
                         <li>
-                          <button id="btn-apply" class="btn btn-primary btn-sm pill collapse multi-collapse">Apply Filter</button>
+                          <form class="form-inline searchbox">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn" type="submit"><i class="icon ti-search"></i></button>
+                          </form>
                         </li>
                         <li>
-                          <button id="btn-emfil" class="btn btn-outline-light bmd-btn-icon" data-toggle="tooltip" data-placement="bottom" title="Filters"><i class="la la-sort-amount-asc"></i></button>
+                          <a class="btn btn-outline-light bmd-btn-icon" href="" data-toggle="tooltip" data-placement="top" title="Print"><i class="la la-print"></i></a>
                         </li>
                         <li>
-                          <button class="btn btn-outline-light bmd-btn-icon" data-toggle="tooltip" data-placement="bottom" title="Print"><i class="la la-print"></i></button>
+                          <a class="btn btn-outline-light bmd-btn-icon" href="" data-toggle="tooltip" data-placement="top" title="PDF File"><i class="la la-file-pdf-o"></i></a>
                         </li>
                         <li>
-                          <button class="btn btn-outline-light bmd-btn-icon" data-toggle="tooltip" data-placement="bottom" title="PDF File"><i class="la la-file-pdf-o"></i></button>
-                        </li>
-                        <li>
-                          <button class="btn btn-outline-light bmd-btn-icon" data-toggle="tooltip" data-placement="bottom" title="Excel File"><i class="la la-file-excel-o"></i></button>
+                          <a class="btn btn-outline-light bmd-btn-icon" href="" data-toggle="tooltip" data-placement="top" title="Excel File"><i class="la la-file-excel-o"></i></a>
                         </li>
                       </ul>
                     </div>
                   </div>
                   <div class="card-body">
-                    <div class="datatables_wrapper">
-                      <div class="table-responsive">
-                        <table class="table table-striped has-img hover has-col-9">
-                          <thead>
-                            <tr>
-                              <th width="1%"></th>
-                              <th class="w-10 sorting_asc">ID Number</th>
-                              <th class="w-10 sorting_desc">Last Name</th>
-                              <th class="w-10">First Name</th>
-                              <th class="w-10">Middle Name</th>
-                              <th class="w-10">Birth Date</th>
-                              <th class="w-5">Age</th>
-                              <th class="w-5">Sex</th>
-                              <th class="w-8">Civil Status</th>
-                              <th class="w-5">Status</th>
-                            </tr>
-                            <tr id="employee-filter" class="collapse multi-collapse table-filter">
-                              <th></th>
-                              <th class="form-group form-input">
-                                <input type="text" class="form-control" id="fname" required="">
-                              </th>
-                              <th class="form-group form-input">
-                                <input type="text" class="form-control" id="fname" required="">
-                              </th>
-                              <th class="form-group form-input">
-                                <input type="text" class="form-control" id="fname" required="">
-                              </th>
-                              <th class="form-group form-input">
-                                <input type="text" class="form-control" id="fname" required="">
-                              </th>
-                              <th></th>
-                              <th></th>
-                              <th>
-                                <select class="form-control" data-live-search="true" livesearchnormalize="true">
-                                  <option value="male">Male</option>
-                                  <option value="female">Female</option>
-                                </select>
-                              </th>
-                              <th>
-                                <select class="form-control" data-live-search="true" livesearchnormalize="true">
-                                  <option value="male">Single</option>
-                                  <option value="female">Married</option>
-                                  <option value="female">Divorce</option>
-                                </select>
-                              </th>
-                              <th>
-                                <select class="form-control" data-live-search="true" livesearchnormalize="true">
-                                  <option value="male">Active</option>
-                                  <option value="female">Inactive</option>
-                                  <option value="female">Retired</option>
-                                </select>
-                              </th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td><span><img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40"></span></td>
-                              <td><span>5421</span></td>
-                              <td><span>Nixon</span></td>
-                              <td><span>Tiger</span></td>
-                              <td><span>N</span></td>
-                              <td><span>Mar 1, 1990</span></td>
-                              <td><span>30</span></td>
-                              <td><span>Male</span></td>
-                              <td><span>Single</span></td>
-                              <td><span class="badge badge-pill badge-success">Active</span></td>
-                            </tr>
-                            <tr>
-                              <td><span><img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40"></span></td>
-                              <td><span>5421</span></td>
-                              <td><span>Nixon</span></td>
-                              <td><span>Tiger</span></td>
-                              <td><span>N</span></td>
-                              <td><span>Jan 1, 1990</span></td>
-                              <td><span>30</span></td>
-                              <td><span>Male</span></td>
-                              <td><span>Married</span></td>
-                              <td><span class="badge badge-pill badge-light">Inactive</span></td>
-                            </tr>
-                            <tr>
-                              <td><span><img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40"></span></td>
-                              <td><span>5421</span></td>
-                              <td><span>Nixon</span></td>
-                              <td><span>Tiger</span></td>
-                              <td><span>N</span></td>
-                              <td><span>Feb 1, 1980</span></td>
-                              <td><span>30</span></td>
-                              <td><span>Male</span></td>
-                              <td><span>Single</span></td>
-                              <td><span class="badge badge-pill badge-success">Active</span></td>
-                            </tr>
-                            <tr>
-                              <td><span><img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40"></span></td>
-                              <td><span>5421</span></td>
-                              <td><span>Nixon</span></td>
-                              <td><span>Tiger</span></td>
-                              <td><span>N</span></td>
-                              <td><span>Apr 1, 1956</span></td>
-                              <td><span>30</span></td>
-                              <td><span>Male</span></td>
-                              <td><span>Widow</span></td>
-                              <td><span class="badge badge-pill badge-success">Active</span></td>
-                            </tr>
-                            <tr>
-                              <td><span><img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40"></span></td>
-                              <td><span>5421</span></td>
-                              <td><span>Nixon</span></td>
-                              <td><span>Tiger</span></td>
-                              <td><span>N</span></td>
-                              <td><span>Dec 11, 1960</span></td>
-                              <td><span>30</span></td>
-                              <td><span>Male</span></td>
-                              <td><span>Divorce</span></td>
-                              <td><span class="badge badge-pill badge-success">Active</span></td>
-                            </tr>
-                            <tr>
-                              <td><span><img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40"></span></td>
-                              <td><span>5421</span></td>
-                              <td><span>Nixon</span></td>
-                              <td><span>Tiger</span></td>
-                              <td><span>N</span></td>
-                              <td><span>Oct 10, 1990</span></td>
-                              <td><span>30</span></td>
-                              <td><span>Male</span></td>
-                              <td><span>Single</span></td>
-                              <td><span class="badge badge-pill badge-dark">Decease</span></td>
-                            </tr>
-                            <tr>
-                              <td><span><img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40"></span></td>
-                              <td><span>5421</span></td>
-                              <td><span>Nixon</span></td>
-                              <td><span>Tiger</span></td>
-                              <td><span>N</span></td>
-                              <td><span>June 1, 1970</span></td>
-                              <td><span>30</span></td>
-                              <td><span>Male</span></td>
-                              <td><span>Single</span></td>
-                              <td><span class="badge badge-pill badge-success">Active</span></td>
-                            </tr>
-                            <tr>
-                              <td><span><img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40"></span></td>
-                              <td><span>5421</span></td>
-                              <td><span>Nixon</span></td>
-                              <td><span>Tiger</span></td>
-                              <td><span>N</span></td>
-                              <td><span>Jan 1, 1999</span></td>
-                              <td><span>30</span></td>
-                              <td><span>Male</span></td>
-                              <td><span>Single</span></td>
-                              <td><span class="badge badge-pill badge-success">Active</span></td>
-                            </tr>
-                            <tr>
-                              <td><span><img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40"></span></td>
-                              <td><span>5421</span></td>
-                              <td><span>Nixon</span></td>
-                              <td><span>Tiger</span></td>
-                              <td><span>N</span></td>
-                              <td><span>Jan 1, 1999</span></td>
-                              <td><span>30</span></td>
-                              <td><span>Male</span></td>
-                              <td><span>Single</span></td>
-                              <td><span class="badge badge-pill badge-info">Retired</span></td>
-                            </tr>
-                            <tr>
-                              <td><span><img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40"></span></td>
-                              <td><span>5421</span></td>
-                              <td><span>Nixon</span></td>
-                              <td><span>Tiger</span></td>
-                              <td><span>N</span></td>
-                              <td><span>Jan 1, 1999</span></td>
-                              <td><span>30</span></td>
-                              <td><span>Male</span></td>
-                              <td><span>Single</span></td>
-                              <td><span class="badge badge-pill badge-light">Inactive</span></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div class="datatable-footer d-flex">
-                        <div class="datatable-pagination">
-                          <ul class="pagination">
-                            <li class="page-item first disabled">
-                              <a class="page-link" href="#" tabindex="-2"><i class="icon ti-angle-double-left"></i></a>
-                            </li>
-                            <li class="page-item prev disabled">
-                              <a class="page-link" href="#" tabindex="-1"><i class="icon ti-angle-left"></i></a>
-                            </li>
-                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">4</a></li>
-                            <li class="page-item"><a class="page-link" href="#">5</a></li>
-                            <li class="page-item more"><span class="ellipsis">...</span></li>
-                            <li class="page-item"><a class="page-link" href="#">8</a></li>
-                            <li class="page-item next">
-                              <a class="page-link" href="#"><i class="icon ti-angle-right"></i></a>
-                            </li>
-                            <li class="page-item last">
-                              <a class="page-link" href="#"><i class="icon ti-angle-double-right"></i></a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="datatable-pager-info float-right ml-auto">
-                          <div class="d-flex">
-                            <div class="datatable-pager-size">
-                              <div class="dataTables_length">
-                                <select name="table1_length" aria-controls="table1" class="bootstrap-select select-sm pill" tabindex="-98">
-                                  <option value="10">10</option>
-                                  <option value="30">30</option>
-                                  <option value="50">50</option>
-                                  <option value="100">100</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="datatable-pager-detail">
-                              <div class="dataTables_info">Displaying 1 - 10 of 72 records</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    <table id="table1" class="table hover table-striped has-img"></table>
                   </div>
                 </div>
               </div>
@@ -1097,6 +877,187 @@
     <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="../assets/js/plugins.min.js" type="text/javascript"></script>
     <script src="../assets/js/modernizr.min.js" type="text/javascript"></script>
+    <script src="../assets/js/datatables.min.js" type="text/javascript"></script>
     <script src="../assets/js/custom.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      // Employee List
+      var dataSet = [
+        ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "5421", "Tiger", "Nixon", "N.", "2011/04/25", "30", "Male", "Married", '<span class="badge badge-pill badge-success">Active</span>'],
+        ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "8422", "Garrett", "Winters", "W.", "2001/04/25", "29", "Male", "Married", '<span class="badge badge-pill badge-success">Active</span>'],
+        ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "1562", "Ashton", "Cox",  "C.", "2009/01/12", "30", "Male", "Married", '<span class="badge badge-pill badge-secondary">Inactive</span>'],
+        ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "6224", "Cedric", "Kelly", "C.", "2012/03/29", "21", "Male", "Single", '<span class="badge badge-pill badge-success">Active</span>'],
+        ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "5407", "Airi", "Satou", "S.", "2008/11/28", "20", "Female", "Single", '<span class="badge badge-pill badge-success">Active</span>'],
+        ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "4804", "Brielle", "Williamson", "W.",  "2012/12/02", "22", "Female", "Single", '<span class="badge badge-pill badge-success">Active</span>'],
+        ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "9608", "Herrod", "Chandler", "C.",  "2012/08/06", "23", "Male", "Married", '<span class="badge badge-pill badge-success">Active</span>'],
+        ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "6200", "Rhona", "Davidson", "D.", "2010/10/14", "24", "Male", "Married", '<span class="badge badge-pill badge-success">Active</span>'],
+        ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "1667", "Colleen", "Hurst", "H.", "2009/09/15", "30", "Male", "Married", '<span class="badge badge-pill badge-success">Active</span>'],
+        ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "2360", "Sonya", "Frost", "F", "2008/12/13", "23", "Female", "Married", '<span class="badge badge-pill badge-success">Active</span>'],
+        ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "3814", "Jena", "Gaines", "G.", "2008/12/19", "28", "Female", "Single", '<span class="badge badge-pill badge-success">Active</span>'],
+        ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "9497", "Quinn", "Flynn", "F", "2013/03/03", "50", "Female", "Married", '<span class="badge badge-pill badge-secondary">Inactive<span>'],
+        ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "6741", "Charde", "Marshall", "M.", "2008/10/16", "55", "Female", "Married", '<span class="badge badge-pill badge-secondary">Inactive<span>'],
+        ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "3597", "Haley", "Kennedy", "K", "2012/12/18", "40", "Female", "Married", '<span class="badge badge-pill badge-success">Active</span>'],
+        ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "1965", "Tatyana", "Fitzpatrick", "F.", "2010/03/17", "35", "Female", "Married", '<span class="badge badge-pill badge-success">Active</span>'],
+        ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "1551", "Michael", "Silva", "S.", "2012/11/27", "30", "Male", "Married", '<span class="badge badge-pill badge-success">Active</span>'],
+        ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "3049", "Paul", "Byrd", "B.", "2010/06/09", "30", "Male", "Married", '<span class="badge badge-pill badge-success">Active</span>'],
+        ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "1731", "Gloria", "Little", "L.", "2009/04/10", "30", "Male", "Married", '<span class="badge badge-pill badge-success">Active</span>'],
+        ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "5441", "William", "Nixon", "N.", "1990/04/25", "40", "Male", "Married", '<span class="badge badge-pill badge-success">Active</span>'],
+        ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "8482", "Garrett", "Winters", "W.", "2001/04/25", "29", "Male", "Married", '<span class="badge badge-pill badge-success">Active</span>'],
+        ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "1572", "Ashton", "Cox",  "C.", "2009/01/12", "30", "Male", "Married", '<span class="badge badge-pill badge-success">Active</span>'],
+        ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "6214", "Cedric", "Kelly", "C.", "2012/03/29", "21", "Male", "Single", '<span class="badge badge-pill badge-success">Active</span>'],
+        ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "5447", "Airi", "Satou", "S.", "2008/11/28", "20", "Female", "Single", '<span class="badge badge-pill badge-success">Active</span>'],
+        ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "4824", "Brielle", "Williamson", "W.",  "2012/12/02", "22", "Female", "Single", '<span class="badge badge-pill badge-success">Active</span>'],
+        ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "9618", "Herrod", "Chandler", "C.",  "2012/08/06", "23", "Male", "Married", '<span class="badge badge-pill badge-success">Active</span>'],
+        ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "6210", "Rhona", "Davidson", "D.", "2010/10/14", "24", "Male", "Married", '<span class="badge badge-pill badge-success">Active</span>'],
+        ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "1677", "Colleen", "Hurst", "H.", "2009/09/15", "30", "Male", "Married", '<span class="badge badge-pill badge-success">Active</span>'],
+        ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "2370", "Sonya", "Frost", "F", "2008/12/13", "23", "Female", "Married", '<span class="badge badge-pill badge-success">Active</span>'],
+        ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "3804", "Jena", "Gaines", "G.", "2008/12/19", "28", "Female", "Single", '<span class="badge badge-pill badge-success">Active</span>'],
+        ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "9407", "Quinn", "Flynn", "F", "2013/03/03", "50", "Female", "Married", '<span class="badge badge-pill badge-secondary">Inactive<span>'],
+        ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "6731", "Charde", "Marshall", "M.", "2008/10/16", "55", "Female", "Married", '<span class="badge badge-pill badge-secondary">Inactive<span>'],
+        ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "3587", "Haley", "Kennedy", "K", "2012/12/18", "40", "Female", "Married", '<span class="badge badge-pill badge-success">Active</span>'],
+        ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "1955", "Tatyana", "Fitzpatrick", "F.", "2010/03/17", "35", "Female", "Married", '<span class="badge badge-pill badge-success">Active</span>'],
+        ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "1571", "Michael", "Silva", "S.", "2012/11/27", "30", "Male", "Married", '<span class="badge badge-pill badge-success">Active</span>'],
+        ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "3049", "Paul", "Byrd", "B.", "2010/06/09", "30", "Male", "Married", '<span class="badge badge-pill badge-success">Active</span>'],
+        ['<img src="../assets/img/main/profile-img.png" class="text-center rounded" alt="" width="40">', "1711", "Gloria", "Little", "L.", "2009/04/10", "30", "Male", "Married", '<span class="badge badge-pill badge-success">Active</span>']
+      ];
+
+      var columnDefs = [ {
+        title: "",
+        className: "w-5",
+        orderable: false
+      },{
+        title: "ID Number"
+      }, {
+        title: "Last Name"
+      }, {
+        title: "First Name"
+      }, {
+        title: "Middle"
+      }, {
+        title: "Birth Date"
+      }, {
+        title: "Age"
+      }, {
+        title: "Sex"
+      }, {
+        title: "Civil Status"
+      }, {
+        title: "Status",
+        orderable: false
+      }];
+
+      var myTable;
+
+      myTable = $('#table1,#table2').DataTable({
+        paginationType: "full_numbers",
+        data: dataSet,
+        columns: columnDefs,
+        order:[],
+        // dom: 'frt <"datatable-wrapper d-flex" <"pagination"p> <"datatable-pager-info float-right ml-auto" <"d-flex" <"datatable-pager-size"l> <"datatable-pager-detail"i> > > >',
+        dom: '<"datatable-body table-responsive"t> <"datatable-footer d-flex" <"datatable-pagination"p> <"datatable-pager-info float-right ml-auto" <"d-flex" <"datatable-pager-size"l> <"datatable-pager-detail"i> > > >', // Needs button container
+        select: true,
+        searching: true,
+        responsive: true,
+        "aLengthMenu": [[10,30,50,100], [10,30,50,100]],
+        language : {
+          "decimal":        "",
+          "emptyTable":     "No data available",
+          "info":           "Displaying _START_ - _END_ of _TOTAL_ records",
+          "infoEmpty":      "Displaying 0 - 0 of 0 records",
+          "infoFiltered":   "",
+          "infoPostFix":    "",
+          "thousands":      ",",
+          "lengthMenu":     "_MENU_",
+          "loadingRecords": 'Please Wait <div class="loader"></div>',
+          "processing":     'Processing <div class="loader"></div>',
+          "search":         "Search:",
+          "zeroRecords":    "No record found",
+          "paginate": {
+            "first":      '<i class="icon ti-angle-double-left"></i>',
+            "last":       '<i class="icon ti-angle-double-right"></i>',
+            "next":       '<i class="icon ti-angle-right"></i>',
+            "previous":   '<i class="icon ti-angle-left"></i>'
+          },
+          "aria": {
+            "sortAscending":  ": activate to sort column ascending",
+            "sortDescending": ": activate to sort column descending"
+          }
+        },
+        drawCallback : function(){
+          var length_select = $(".dataTables_length");
+          var select = $(".dataTables_length").find("select");
+          select.addClass("bootstrap-select select-sm pill");
+          select.selectpicker();
+        }
+      });
+
+      // Employee Profile - Family Member List
+      var familyMembers = [
+        ["Tiger Nixon", "Spouse", "2011/04/25", "Married", "Nurse", "941 Canton Village, San Isidro, Talisay City, Cebu", "Yes"],
+        ["Garrett Winters", "Son", "2001/04/25", "Married", "Nurse", "Cebu City", "Yes"],
+        ["Ashton Cox", "Son", "2009/01/12", "Married", "Driver", "Talisay City", "No"],
+      ];
+
+      var columnDefs2 = [ {
+        title: "Family"
+      },{
+        title: "Relationship"
+      }, {
+        title: "Birth Date"
+      }, {
+        title: "Civil Status"
+      }, {
+        title: "Occupation"
+      }, {
+        title: "Address"
+      }, {
+        title: "Dependent"
+      }, {
+        title: "Actions",
+        "defaultContent": '<div class="dropdown sm text-center"><a class="btn btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon la la-ellipsis-h lg"></i></a><div class="dropdown-menu dropdown-menu-right"><ul class="nav"><li class="nav-item"><a class="nav-link"><i class="icon left la la-edit"></i><span class="nav-text">Edit</span></a></li><li class="nav-item"><button id="delete" type="button" class="nav-link"><i class="icon left la la-trash-o"></i><span class="nav-text">Delete</span></button></li><li class="nav-item"><a class="nav-link"><i class="icon left ti-printer"></i><span class="nav-text">Record Logs</span></a></li></ul></div></div>'
+      }];
+
+      var myTable2;
+
+      myTable2 = $('#family-members').DataTable({
+        paginationType: "full_numbers",
+        data: familyMembers,
+        columns: columnDefs2,
+        dom: '<"datatable-body table-responsive"t> <"datatable-footer d-flex" <"datatable-pagination"> <"datatable-pager-info float-right ml-auto" <"d-flex" <"datatable-pager-size"> <"datatable-pager-detail"i> > > >', // Needs button container
+        select: true,
+        searching: true,
+        responsive: false,
+        "aLengthMenu": [[10,30,50,100], [10,30,50,100]],
+        language : {
+          "decimal":        "",
+          "emptyTable":     "No data available",
+          "info":           "Displaying _START_ - _END_ of _TOTAL_ records",
+          "infoEmpty":      "Displaying 0 - 0 of 0 records",
+          "infoFiltered":   "",
+          "infoPostFix":    "",
+          "thousands":      ",",
+          "lengthMenu":     "_MENU_",
+          "loadingRecords": 'Please Wait <div class="loader"></div>',
+          "processing":     'Processing <div class="loader"></div>',
+          "search":         "Search:",
+          "zeroRecords":    "No record found",
+          "paginate": {
+            "first":      '<i class="icon ti-angle-double-left"></i>',
+            "last":       '<i class="icon ti-angle-double-right"></i>',
+            "next":       '<i class="icon ti-angle-right"></i>',
+            "previous":   '<i class="icon ti-angle-left"></i>'
+          },
+          "aria": {
+            "sortAscending":  ": activate to sort column ascending",
+            "sortDescending": ": activate to sort column descending"
+          }
+        },
+        drawCallback : function(){
+          var length_select = $(".dataTables_length");
+          var select = $(".dataTables_length").find("select");
+          select.addClass("bootstrap-select select-sm pill");
+          select.selectpicker();
+        }
+      });
+    </script>
   </body>
 </html>
