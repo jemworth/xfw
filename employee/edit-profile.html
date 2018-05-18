@@ -2,7 +2,7 @@
 <html lang="en" >
   <head>
     <meta charset="utf-8" />
-    <title>Xynapx FW | Employees List</title>
+    <title>Xynapx FW | Edit Profile</title>
     <meta name="description" content="Latest updates and statistic charts">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -190,7 +190,7 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../employee/view-form.html" class="nav-link">
+                    <a href="../employee/custom-list.html" class="nav-link">
                       <i class="icon left bullet"></i>
                       <span class="nav-text">Custom List</span>
                     </a>
@@ -818,9 +818,7 @@
               <div class="title mr-auto">
                 <h3><i class="icon left la la-group"></i> Employees</h3>
               </div>
-              <div class="subheader-tools">
-                <a href="../employee/add-new.html" class="btn btn-primary btn-raised btn-md pill"><i class="icon left la la-plus lg"></i> Add New</a>
-              </div>
+              <div class="subheader-tools"></div>
             </div>
           </div>
           <div class="content">
@@ -837,19 +835,15 @@
                   </div>
                   <div class="card-body">
                     <form>
+                      <div class="subtitle">
+                        <h5 class="title"><i class="icon left la la-user-secret"></i> Personal Information</h5>
+                      </div>
                       <div class="table-row">
-                        <table class="table-form">
-                          <thead>
-                            <tr>
-                              <th class="form-subtle" colspan="4">
-                                <i class="icon left flaticon-profile-1"></i> Personal Information
-                              </th>
-                            </tr>
-                          </thead>
+                        <table class="table-form column-3">
                           <tbody>
                             <tr>
                               <td class="form-label">
-                                <label for="idnumber">ID Number <span class="asterisk">*</span></label>
+                                <label for="idnumber">ID Number<span class="asterisk">*</span></label>
                               </td>
                               <td class="form-group form-input">
                                 <input type="text" class="form-control" id="idnumber" required>
@@ -857,25 +851,25 @@
                               <td colspan="4"></td>
                             </tr>
                             <tr>
-                              <td class="form-label">
-                                <label for="lname">Last Name <span class="asterisk">*</span></label>
+                              <td class="form-label" width="12%">
+                                <label for="lname">Last Name<span class="asterisk">*</span></label>
                               </td>
-                              <td class="form-group form-input">
+                              <td class="form-group form-input" width="21.33%">
                                 <input type="text" class="form-control" id="lname" required>
                               </td>
-                              <td class="form-label">
-                                <label for="fname">First Name <span class="asterisk">*</span></label>
+                              <td class="form-label" width="12%">
+                                <label for="fname">First Name<span class="asterisk">*</span></label>
                               </td>
-                              <td class="form-group form-input">
+                              <td class="form-group form-input" width="21.33%">
                                 <input type="text" class="form-control" id="fname" required>
                                 <div class="validation-text d-none">
                                   <span class="text-danger">Please choose correct email.</span>
                                 </div>
                               </td>
-                              <td class="form-label">
-                                <label for="mname">Middle Name <span class="asterisk">*</span></label>
+                              <td class="form-label" width="12%">
+                                <label for="mname">Middle Name<span class="asterisk">*</span></label>
                               </td>
-                              <td class="form-group form-input">
+                              <td class="form-group form-input" width="21.33%">
                                 <input type="text" class="form-control" id="mname" required>
                               </td>
                             </tr>
@@ -901,7 +895,7 @@
                             </tr>
                             <tr>
                               <td class="form-label">
-                                <label for="sex">Sex <span class="asterisk">*</span></label>
+                                <label for="sex">Sex<span class="asterisk">*</span></label>
                               </td>
                               <td class="form-group form-input">
                                 <select class="form-control" required>
@@ -911,7 +905,7 @@
                                 </select>
                               </td>
                               <td class="form-label">
-                                <label for="birthdate">Birth Date <span class="asterisk">*</span></label>
+                                <label for="birthdate">Birth Date<span class="asterisk">*</span></label>
                               </td>
                               <td class="form-group form-input">
                                 <input type="text" class="form-control datepicker" id="birthdate" data-toggle="datetimepicker" data-target="#birthdate" required>
@@ -925,7 +919,7 @@
                             </tr>
                             <tr>
                               <td class="form-label">
-                                <label for="civilstatus">Civil Status <span class="asterisk">*</span></label>
+                                <label for="civilstatus">Civil Status<span class="asterisk">*</span></label>
                               </td>
                               <td class="form-group form-input">
                                 <select id="civilstatus" class="form-control" required>
@@ -935,7 +929,7 @@
                                 </select>
                               </td>
                               <td class="form-label">
-                                <label for="nationality">Nationality <span class="asterisk">*</span></label>
+                                <label for="nationality">Nationality<span class="asterisk">*</span></label>
                               </td>
                               <td class="form-group form-input">
                                 <select id="nationality" class="form-control" data-live-search="true" liveSearchNormalize="true" required>
@@ -1153,7 +1147,7 @@
                               <td class="form-group form-input">
                                 <input type="text" class="form-control" id="mobnum">
                               </td>
-                              <td class="d-xxl-none" colspan="2"></td>
+                              <td class="d-xxl-none"></td>
                             </tr>
                             <tr>
                               <td class="form-label">
@@ -1168,16 +1162,16 @@
                               <td class="form-group form-input">
                                 <input type="email" class="form-control" id="personalemail">
                               </td>
-                              <td class="d-xxl-none" colspan="2"></td>
+                              <td class="d-xxl-none"></td>
                             </tr>
                             <tr>
                               <th class="form-subtle" colspan="4">
-                                <i class="icon left flaticon-placeholder"></i> Current Address
+                                <i class="icon left la la-street-view"></i> Current Address
                               </th>
                             </tr>
                             <tr>
                               <td class="form-label">
-                                <label for="currentcountries">Country <span class="asterisk">*</span></label>
+                                <label for="currentcountries">Country<span class="asterisk">*</span></label>
                               </td>
                               <td class="form-group form-input">
                                 <select id="currentcountries" class="form-control" data-live-search="true" liveSearchNormalize="true" required>
@@ -1423,7 +1417,7 @@
                                 </select>
                               </td>
                               <td class="form-label">
-                                <label for="currentprov">Province <span class="asterisk">*</span></label>
+                                <label for="currentprov">Province<span class="asterisk">*</span></label>
                               </td>
                               <td class="form-group form-input">
                                 <select id="currentprov" class="form-control" data-live-search="true" liveSearchNormalize="true" required>
@@ -1512,7 +1506,7 @@
                                 </select>
                               </td>
                               <td class="form-label">
-                                <label for="currentcity">City/Town <span class="asterisk">*</span></label>
+                                <label for="currentcity">City/Town<span class="asterisk">*</span></label>
                               </td>
                               <td class="form-group form-input">
                                 <select id="currentcity" class="form-control" data-live-search="true" liveSearchNormalize="true" required>
@@ -1574,7 +1568,7 @@
                             </tr>
                             <tr>
                               <td class="form-label">
-                                <label for="currentbarangay">Barangay <span class="asterisk">*</span></label>
+                                <label for="currentbarangay">Barangay<span class="asterisk">*</span></label>
                               </td>
                               <td class="form-group form-input">
                                 <select id="currentbarangay" class="form-control" data-live-search="true" liveSearchNormalize="true" required>
@@ -1586,16 +1580,16 @@
                                 </select>
                               </td>
                               <td class="form-label">
-                                <label for="currenthouse">House No./Street <span class="asterisk">*</span></label>
+                                <label for="currenthouse">House No./Street<span class="asterisk">*</span></label>
                               </td>
                               <td class="form-group form-input">
                                 <input type="text" class="form-control" id="currenthouse" required>
                               </td>
-                              <td class="d-xxl-none" colspan="2"></td>
+                              <td class="d-xxl-none"></td>
                             </tr>
                             <tr>
                               <th class="form-subtle" colspan="4">
-                                <i class="icon left flaticon-placeholder"></i> Permanent Address
+                                <i class="icon left la la-street-view"></i> Permanent Address
                               </th>
                             </tr>
                             <tr>
@@ -2014,36 +2008,36 @@
                               <td class="form-group form-input">
                                 <input type="text" class="form-control" id="permanenthouse">
                               </td>
-                              <td class="d-xxl-none" colspan="2"></td>
+                              <td class="d-xxl-none"></td>
                             </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="form-sepator solid"></div>
+                      <div class="subtitle">
+                        <h5 class="title"><i class="icon left la la-briefcase"></i> Employment Information</h5>
+                      </div>
+                      <div class="table-row">
+                        <table class="table-form">
+                          <tbody>
                             <tr>
-                              <td class="separator" colspan="8">
-                                <div class="form-sepator solid"></div>
+                              <td class="form-label" width="12%">
+                                <label for="dateemployed">Date Employed<span class="asterisk">*</span></label>
                               </td>
-                            </tr>
-                            <tr>
-                              <th class="form-subtle pt-0" colspan="4">
-                                <i class="icon left flaticon-suitcase"></i> Employment Information
-                              </th>
-                            </tr>
-                            <tr>
-                              <td class="form-label">
-                                <label for="dateemployed">Date Employed <span class="asterisk">*</span></label>
-                              </td>
-                              <td class="form-group form-input">
+                              <td class="form-group form-input" width="21.33%">
                                 <input type="text" class="form-control datepicker" id="dateemployed" data-toggle="datetimepicker" data-target="#dateemployed" required>
                               </td>
-                              <td class="form-label">
+                              <td class="form-label" width="12%">
                                 <label for="lastapt">Last Appointment</label>
                               </td>
-                              <td class="form-group form-input">
+                              <td class="form-group form-input" width="21.33%">
                                 <input type="text" class="form-control datepicker" id="lastapt" data-toggle="datetimepicker" data-target="#lastapt">
                               </td>
-                              <td class="d-xxl-none" colspan="2"></td>
+                              <td class="d-xxl-none"></td>
                             </tr>
                             <tr>
                               <td class="form-label">
-                                <label for="mothercompany">Mother Company <span class="asterisk">*</span></label>
+                                <label for="mothercompany">Mother Company<span class="asterisk">*</span></label>
                               </td>
                               <td class="form-group form-input">
                                 <select id="mothercompany" class="form-control" required>
@@ -2055,7 +2049,7 @@
                                 </select>
                               </td>
                               <td class="form-label">
-                                <label for="detailedcompany">Detailed Company <span class="asterisk">*</span></label>
+                                <label for="detailedcompany">Detailed Company<span class="asterisk">*</span></label>
                               </td>
                               <td class="form-group form-input">
                                 <select id="detailedcompany" class="form-control" required>
@@ -2066,11 +2060,11 @@
                                   <option>Pit-os</option>
                                 </select>
                               </td>
-                              <td class="d-xxl-none" colspan="2"></td>
+                              <td class="d-xxl-none"></td>
                             </tr>
                             <tr>
                               <td class="form-label">
-                                <label for="motheroffice">Mother Office <span class="asterisk">*</span></label>
+                                <label for="motheroffice">Mother Office<span class="asterisk">*</span></label>
                               </td>
                               <td class="form-group form-input">
                                 <select id="motheroffice" class="form-control" required>
@@ -2082,7 +2076,7 @@
                                 </select>
                               </td>
                               <td class="form-label">
-                                <label for="detailedoffice">Detailed Office <span class="asterisk">*</span></label>
+                                <label for="detailedoffice">Detailed Office<span class="asterisk">*</span></label>
                               </td>
                               <td class="form-group form-input">
                                 <select id="detailedoffice" class="form-control" required>
@@ -2093,7 +2087,7 @@
                                   <option>Pit-os</option>
                                 </select>
                               </td>
-                              <td class="d-xxl-none" colspan="2"></td>
+                              <td class="d-xxl-none"></td>
                             </tr>
                             <tr>
                               <td class="form-label">
@@ -2120,11 +2114,11 @@
                                   <option>Pit-os</option>
                                 </select>
                               </td>
-                              <td class="d-xxl-none" colspan="2"></td>
+                              <td class="d-xxl-none"></td>
                             </tr>
                             <tr>
                               <td class="form-label">
-                                <label for="employment">Employment <span class="asterisk">*</span></label>
+                                <label for="employment">Employment<span class="asterisk">*</span></label>
                               </td>
                               <td class="form-group form-input">
                                 <select id="employment" class="form-control" required>
@@ -2136,7 +2130,7 @@
                                 </select>
                               </td>
                               <td class="form-label">
-                                <label for="detailedoffice">Position <span class="asterisk">*</span></label>
+                                <label for="detailedoffice">Position<span class="asterisk">*</span></label>
                               </td>
                               <td class="form-group form-input">
                                 <select id="detailedoffice" class="form-control" data-live-search="true" liveSearchNormalize="true" required>
@@ -2147,7 +2141,7 @@
                                   <option>Team Manager</option>
                                 </select>
                               </td>
-                              <td class="d-xxl-none" colspan="2"></td>
+                              <td class="d-xxl-none"></td>
                             </tr>
                             <tr>
                               <td class="form-label">
@@ -2169,12 +2163,12 @@
                                     
                               </td>
                               <td class="form-label">
-                                <label for="basicsalary">Basic Salary <span class="asterisk">*</span></label>
+                                <label for="basicsalary">Basic Salary<span class="asterisk">*</span></label>
                               </td>
                               <td class="form-group form-input">
                                 <input type="text" class="form-control" id="basicsalary" required>
                               </td>
-                              <td class="d-xxl-none" colspan="2"></td>
+                              <td class="d-xxl-none"></td>
                             </tr>
                             <tr>
                               <td class="form-label">
@@ -2195,32 +2189,32 @@
                                   <option>Graveyard</option>
                                 </select>
                               </td>
-                              <td class="d-xxl-none" colspan="2"></td>
+                              <td class="d-xxl-none"></td>
                             </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="form-sepator solid"></div>
+                       <div class="subtitle">
+                        <h5 class="title"><i class="icon left ti-id-badge"></i> Identification Numbers</h5>
+                      </div>
+                      <div class="table-row">
+                        <table class="table-form">
+                          <tbody>
                             <tr>
-                              <td class="separator" colspan="8">
-                                <div class="form-sepator solid"></div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <th class="form-subtle pt-0" colspan="8">
-                                <i class="icon left flaticon-user-ok"></i> Identification Numbers
-                              </th>
-                            </tr>
-                            <tr>
-                              <td class="form-label">
+                              <td class="form-label" width="12%">
                                 <label for="tinno">TIN</label>
                               </td>
-                              <td class="form-group form-input">
+                              <td class="form-group form-input" width="21.33%">
                                 <input type="text" class="form-control" id="tinno">
                               </td>
-                              <td class="form-label">
+                              <td class="form-label" width="12%">
                                 <label for="sssno">SSS No.</label>
                               </td>
-                              <td class="form-group form-input">
+                              <td class="form-group form-input" width="21.33%">
                                 <input type="text" class="form-control" id="sssno">
                               </td>
-                              <td class="d-xxl-none" colspan="2"></td>
+                              <td class="d-xxl-none"></td>
                             </tr>
                             <tr>
                               <td class="form-label">
@@ -2235,18 +2229,18 @@
                               <td class="form-group form-input">
                                 <input type="text" class="form-control" id="pagibigno">
                               </td>
-                              <td class="d-xxl-none" colspan="2"></td>
+                              <td class="d-xxl-none"></td>
                             </tr>
-                            <tr>
-                              <td class="separator" colspan="8">
-                                <div class="form-sepator solid"></div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <th class="form-subtle pt-0" colspan="8">
-                                <i class="icon left flaticon-medical"></i> Medical Information
-                              </th>
-                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="form-sepator solid"></div>
+                      <div class="subtitle">
+                        <h5 class="title"><i class="icon left la la-heartbeat"></i> Medical Information</h5>
+                      </div>
+                      <div class="table-row">
+                        <table class="table-form">
+                          <tbody>
                             <tr>
                               <td class="form-label">
                                 <label for="bloodtype">Blood Type</label>
@@ -2259,67 +2253,66 @@
                                   <option>A+</option>
                                 </select>
                               </td>
-                              <td colspan="4"></td>
+                              <td colspan="3"></td>
                             </tr>
                             <tr>
-                              <td class="form-label">
+                              <td class="form-label" width="12%">
                                 <label for="weight">Weight</label>
                               </td>
-                              <td class="form-group form-input">
+                              <td class="form-group form-input" width="21.33%">
                                 <input type="text" class="form-control" id="weight">
                               </td>
-                              <td class="form-label">
+                              <td class="form-label" width="12%">
                                 <label for="height">Height</label>
                               </td>
-                              <td class="form-group form-input">
+                              <td class="form-group form-input" width="21.33%">
                                 <input type="text" class="form-control" id="height">
                               </td>
-                              <td class="d-xxl-none" colspan="2"></td>
+                              <td class="d-xxl-none"></td>
                             </tr>
                             <tr>
-                              <td class="form-label align-text-top">
+                              <td class="form-label align-text-top pt-5">
                                 <label for="condition">Condition</label>
                               </td>
-                              <td class="form-group form-input" colspan="5">
+                              <td class="form-group form-input">
                                 <textarea class="form-control" id="condition"></textarea>
                               </td>
-                            </tr>
-                            <tr>
-                              <td class="form-label align-text-top">
+                              <td class="form-label align-text-top pt-5">
                                 <label for="accident">Accident</label>
                               </td>
-                              <td class="form-group form-input" colspan="5">
+                              <td class="form-group form-input">
                                 <textarea class="form-control" id="accident"></textarea>
                               </td>
                             </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="form-sepator solid"></div>
+                      <div class="subtitle">
+                        <h5 class="title"><i class="icon left la la-group"></i> Recommendation</h5>
+                      </div>
+                      <div class="table-row">
+                        <table class="table-form">
+                          <tbody>
                             <tr>
-                              <td class="separator" colspan="8">
-                                <div class="form-sepator solid"></div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <th class="form-subtle pt-0" colspan="4">
-                                <i class="icon left flaticon-users"></i> Recommendation
-                              </th>
-                            </tr>
-                            <tr>
-                              <td class="form-label align-text-top">
+                              <td class="form-label align-text-top pt-5" width="12%">
                                 <label for="recomby">Recommended By</label>
                               </td>
-                              <td class="form-group form-input" colspan="5">
+                              <td class="form-group form-input" width="21.33%">
                                 <textarea class="form-control" id="recomby"></textarea>
                               </td>
+                              <td class="d-xxl-none"></td>
                             </tr>
-                            <tr>
-                              <td class="separator" colspan="8">
-                                <div class="form-sepator solid"></div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <th class="form-subtle pt-0" colspan="4">
-                                <i class="icon left flaticon-profile"></i> Account Configuration
-                              </th>
-                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="form-sepator solid"></div>
+                      <div class="subtitle">
+                        <h5 class="title"><i class="icon left la la-gear"></i> Account Configuration</h5>
+                      </div>
+                      <div class="table-row">
+                        <table class="table-form">
+                          <tbody>
                             <tr>
                               <td class="form-label">
                                 <label for="profpic">Profile Picture</label>
@@ -2330,19 +2323,19 @@
                               <td colspan="4"></td>
                             </tr>
                             <tr>
-                              <td class="form-label">
+                              <td class="form-label" width="12%">
                                 <label for="bankname">Bank Name</label>
                               </td>
-                              <td class="form-group form-input">
+                              <td class="form-group form-input" width="21.33%">
                                 <input type="text" class="form-control" id="bankname">
                               </td>
-                              <td class="form-label">
+                              <td class="form-label" width="12%">
                                 <label for="bankacc">Bank Account No.</label>
                               </td>
-                              <td class="form-group form-input">
+                              <td class="form-group form-input" width="21.33%">
                                 <input type="text" class="form-control" id="bankacc">
                               </td>
-                              <td class="d-xxl-none" colspan="2"></td>
+                              <td class="d-xxl-none"></td>
                             </tr>
                             <tr>
                               <td class="form-label">
@@ -2367,7 +2360,7 @@
                                   <option>40, 000</option>
                                 </select>
                               </td>
-                              <td class="d-xxl-none" colspan="2"></td>
+                              <td class="d-xxl-none"></td>
                             </tr>
                             <tr>
                               <td class="form-label">
@@ -2391,7 +2384,7 @@
                               <td class="form-label">
                                 <label for="biolog">Biometric Log</label>
                               </td>
-                              <td class="form-input" colspan="5">
+                              <td class="form-input" colspan="3">
                                 <div class="checkbox">
                                   <label>
                                     <input id="biolog" type="checkbox" checked> Use Biometric Log for Attendance
@@ -2403,7 +2396,7 @@
                               <td class="form-label">
                                 <label for="fingerprint">Fingerprint Exempted</label>
                               </td>
-                              <td class="form-input" colspan="5">
+                              <td class="form-input" colspan="3">
                                 <div class="checkbox">
                                   <label>
                                     <input id="fingerprint" type="checkbox"> Use PIN instead of fingerprint for Biometric Log
@@ -2415,7 +2408,7 @@
                               <td class="form-label">
                                 <label for="basiccon">Basic Contributions</label>
                               </td>
-                              <td class="form-input" colspan="5">
+                              <td class="form-input" colspan="3">
                                 <div class="checkbox">
                                   <label>
                                     <input id="basiccon" type="checkbox" checked> With Basic Contributions Based on Employment
@@ -2427,7 +2420,7 @@
                               <td class="form-label">
                                 <label for="holdingtax">Withholding Tax</label>
                               </td>
-                              <td class="form-input" colspan="5">
+                              <td class="form-input" colspan="3">
                                 <div class="checkbox">
                                   <label>
                                     <input id="holdingtax" type="checkbox" checked> Set Withholding Tax For This Employment
@@ -2439,7 +2432,7 @@
                               <td class="form-label">
                                 <label for="ess">ESS User Account</label>
                               </td>
-                              <td class="form-input" colspan="5">
+                              <td class="form-input" colspan="3">
                                 <div class="checkbox">
                                   <label>
                                     <input id="ess" type="checkbox" checked> Activate Employee Self-Service Account
@@ -2448,20 +2441,12 @@
                               </td>
                             </tr>
                           </tbody>
-                          <tfoot>
-                            <tr>
-                              <td class="separator" colspan="8">
-                                <div class="form-sepator solid"></div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td colspan="8">
-                                <button type="submit" class="btn btn-primary btn-raised pill loader">Save</button>
-                                <button type="submit" class="btn btn-outline-danger btn-raised pill">Cancel</button>
-                              </td>
-                            </tr>
-                          </tfoot>
                         </table>
+                      </div>
+                      <div class="form-sepator solid"></div>
+                      <div class="form-group mb-0">
+                        <button type="submit" class="btn btn-primary btn-raised pill loader">Save</button>
+                        <button type="submit" class="btn btn-outline-danger btn-raised pill">Cancel</button>
                       </div>
                     </form>
                   </div>

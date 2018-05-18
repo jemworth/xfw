@@ -1,5 +1,5 @@
 "use strict";
-$('select,.bootstrap-select').selectpicker();
+
 $('.datepicker').datetimepicker({
   defaultDate: false,
   format: 'MMMM DD, YYYY',
@@ -28,7 +28,7 @@ $('#family-members tbody tr td, #profile-dutiestab tbody tr td').click(function(
 $('#family-members #edit, #profile-dutiestab #edit').click(function(){
   $('#modal4').modal('show');
 });
-$('#family-members #view, #profile-dutiestab #view').click(function(){
+$('#recordlog,#family-members #view, #profile-dutiestab #view').click(function(){
   $('#modal5').modal('show');
 });
 $('#family-members tbody tr td:last-child, #profile-dutiestab tbody tr td:last-child').off('click');
